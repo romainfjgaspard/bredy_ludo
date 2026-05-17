@@ -1,0 +1,1 @@
+import{O as e,_ as t,j as n,z as r}from"./index-Cv1UF5Ht.js";var i={},a={class:`flex items-center justify-center p-8`};function o(t,i){return r(),n(`div`,a,[...i[0]||=[e(`div`,{class:`animate-spin rounded-full h-10 w-10 border-4 border-indigo-500 border-t-transparent`},null,-1)]])}var s=t(i,[[`render`,o]]);export{s as t};
