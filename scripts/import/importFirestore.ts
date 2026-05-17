@@ -32,7 +32,7 @@ async function main() {
     const doc = {
       nom: game.csvName,
       type: d.type === 'boardgameexpansion' ? 'extension' : 'base',
-      emplacement: game.emplacement,
+      emplacement: 'A1', // À mettre à jour via l'interface admin
       archived: false,
       bgg_id: d.id,
       image_url: `${d.id}.jpg`,

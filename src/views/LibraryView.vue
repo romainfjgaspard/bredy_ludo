@@ -56,11 +56,8 @@ const toastMsg = ref('')
 
 onMounted(async () => {
   if (gamesStore.games.length === 0) {
-    try {
-      await gamesStore.refresh()
-    } catch {
-      toastMsg.value = 'Impossible de charger les jeux'
-    }
+    const ok = await gamesStore.refresh()
+    if (!ok) toastMsg.value = 'Impossible de charger les jeux. Vérifiez votre connexion.'
   }
 })
 </script>

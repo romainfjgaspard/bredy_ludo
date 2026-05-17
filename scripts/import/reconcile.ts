@@ -10,7 +10,7 @@ const OUTPUT = path.join(ROOT, 'data/import/reconciled-games.json')
 
 const THRESHOLD = 85
 
-interface RawGame { nom: string; emplacement: string }
+interface RawGame { nom: string }
 interface BggDetails {
   id: number; name: string; type: string;
   minPlayers?: number; maxPlayers?: number; minPlaytime?: number; maxPlaytime?: number;
@@ -20,7 +20,6 @@ interface Cache { searches: Record<string, { id: number; name: string; type: str
 
 export interface ReconciledGame {
   csvName: string
-  emplacement: string
   selectedBggId: number | null
   status: 'confirmed' | 'needsReview' | 'notFound'
   score: number
@@ -64,7 +63,7 @@ function main() {
     const results = cache.searches[key] ?? []
 
     if (results.length === 0) {
-      notFound.push({ csvName: game.nom, emplacement: game.emplacement, selectedBggId: null, status: 'notFound', score: 0, candidates: [] })
+      notFound.push({ csvName: game.nom, selectedBggId: null, status: 'notFound', score: 0, candidates: [] })
       continue
     }
 
@@ -78,7 +77,6 @@ function main() {
 
     const entry: ReconciledGame = {
       csvName: game.nom,
-      emplacement: game.emplacement,
       selectedBggId: best.id,
       score: best.score,
       candidates: scored.slice(0, 5),

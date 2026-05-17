@@ -8,7 +8,16 @@
     "build": "vue-tsc -b && vite build",
     "preview": "vite preview",
     "test": "vitest",
-    "test:coverage": "vitest run --coverage"
+    "test:coverage": "vitest run --coverage",
+    "import:parse": "tsx scripts/import/parseXlsx.ts",
+    "import:bgg": "tsx scripts/import/searchBgg.ts",
+    "import:reconcile": "tsx scripts/import/reconcile.ts",
+    "import:report": "tsx scripts/import/generateReport.ts",
+    "import:images": "tsx scripts/import/downloadImages.ts",
+    "import:check": "tsx scripts/import/checkImages.ts",
+    "import:dry": "tsx scripts/import/importFirestore.ts --dry-run",
+    "import:run": "tsx scripts/import/importFirestore.ts",
+    "export": "tsx scripts/export/exportFirestore.ts"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.0",
@@ -34,6 +43,7 @@
     "dotenv": "^17.4.2",
     "jsdom": "^29.1.1",
     "ts-node": "^10.9.2",
+    "tsx": "^4.22.1",
     "typescript": "~6.0.2",
     "vite": "^8.0.12",
     "vitest": "^4.1.6",
