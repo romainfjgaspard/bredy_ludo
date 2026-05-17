@@ -1,0 +1,1 @@
+var e=[`Nicolas`,`Valérie`,`Romane`,`Erin`,`Agathe`];export{e as t};

@@ -1,0 +1,1 @@
+function e(e,t=6){if(!e)return!0;let n=e.toDate(),r=new Date;return r.setMonth(r.getMonth()-t),n<r}export{e as t};
