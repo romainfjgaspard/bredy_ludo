@@ -42,8 +42,10 @@ await page.goto('https://boardgamegeek.com/login', { waitUntil: 'networkidle', t
 
 // Fermer la popup de consentement cookies si elle apparaît (Funding Choices / fc-consent)
 // La popup bloque les clics — on la supprime directement du DOM
+// Note: le callback s'exécute dans le contexte navigateur, pas Node.js
 const hadConsent = await page.evaluate(() => {
-  const overlay = document.querySelector('.fc-consent-root') as HTMLElement | null
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const overlay = (globalThis as any).document?.querySelector('.fc-consent-root')
   if (overlay) { overlay.remove(); return true }
   return false
 })
