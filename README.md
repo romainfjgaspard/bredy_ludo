@@ -1,28 +1,28 @@
 # bredy_ludo ??
 
-Bibliothèque de jeux de société de la famille Bredy — Vue 3 + Firebase + GitHub Pages.
+Bibliothï¿½que de jeux de sociï¿½tï¿½ de la famille Bredy ï¿½ Vue 3 + Firebase + GitHub Pages.
 
 **URL** : https://romainfjgaspard.github.io/bredy_ludo/
 
 ---
 
-## Fonctionnalités
+## Fonctionnalitï¿½s
 
-- Bibliothèque filtrée (recherche, joueurs, durée, âge, extensions)
-- Notation par profil (Nicolas, Valérie, Romane, Erin, Agathe)
-- Mode Soirée jeu : filtrage par présents + notes recalculées
-- Roue de décision avec presets (courts, oubliés, top famille, compatibles présents)
-- Statistiques : parties/mois, top jeux, jeux oubliés, heatmap rangements
-- Administration sécurisée par Firebase Auth (claim admin:true)
+- Bibliothï¿½que filtrï¿½e (recherche, joueurs, durï¿½e, ï¿½ge, extensions)
+- Notation par profil (5 profils familiaux)
+- Mode Soirï¿½e jeu : filtrage par prï¿½sents + notes recalculï¿½es
+- Roue de dï¿½cision avec presets (courts, oubliï¿½s, top famille, compatibles prï¿½sents)
+- Statistiques : parties/mois, top jeux, jeux oubliï¿½s, heatmap rangements
+- Administration sï¿½curisï¿½e par Firebase Auth (claim admin:true)
 
 ---
 
 ## Setup local
 
-### Prérequis
+### Prï¿½requis
 
 - Node.js 20+
-- Un projet Firebase (Firestore + Authentication activés)
+- Un projet Firebase (Firestore + Authentication activï¿½s)
 
 ### Installation
 
@@ -46,13 +46,15 @@ npm run dev
 
 ## Scripts d''import
 
-### Prérequis
+### Prï¿½requis
 
-1. `data/import/source.xlsx` — liste des jeux (une colonne, noms uniquement)
+1. `data/import/source.xlsx` ï¿½ liste des jeux (une colonne, noms uniquement)
 2. Dans `.env.local` : `BGG_USERNAME` et `BGG_PASSWORD` (compte boardgamegeek.com)
-3. `service-account.json` à la racine (Firebase Console ? Paramètres ? Comptes de service)
+3. `service-account.json` ï¿½ la racine (Firebase Console ? Paramï¿½tres ? Comptes de service)
 
-### Ordre d''exécution
+### Ordre d''exï¿½cution
+
+> **Mode test sans BGG** : `npm run import:fake` gÃ©nÃ¨re des donnÃ©es fictives pour tester le pipeline sans l'API BGG.
 
 ```bash
 npm run import:parse      # Excel ? raw-games.json
@@ -62,23 +64,22 @@ npm run import:report     # Rapport ? review-report.md
 
 # *** REVUE MANUELLE de reconciled-games.json (section needsReview) ***
 
-npm run import:bgg -- --only-missing  # Détails pour jeux corrigés
-npm run import:images     # Téléchargement images BGG
-npm run import:check      # Vérification images
+npm run import:bgg -- --only-missing  # Dï¿½tails pour jeux corrigï¿½s
+npm run import:images     # Tï¿½lï¿½chargement images BGG
+npm run import:check      # Vï¿½rification images
 npm run import:dry        # Simulation import Firestore
-npm run import:run        # Import réel dans Firestore
+npm run import:run        # Import rï¿½el dans Firestore
 ```
 
 ### Droits admin (une fois)
 
 ```bash
-npx tsx scripts/admin/setAdminClaim.ts siegfrid100102@yahoo.fr
-npx tsx scripts/admin/setAdminClaim.ts pargass31@gmail.com
+npx tsx scripts/admin/setAdminClaim.ts <email> [<password>]
 ```
 
 ---
 
-## Déploiement GitHub Actions
+## Dï¿½ploiement GitHub Actions
 
 Push sur `main` ? build automatique ? GitHub Pages.
 
@@ -87,7 +88,7 @@ Secrets requis dans Settings ? Secrets :
 `VITE_FIREBASE_STORAGE_BUCKET`, `VITE_FIREBASE_MESSAGING_SENDER_ID`, `VITE_FIREBASE_APP_ID`,
 `FIREBASE_SERVICE_ACCOUNT`
 
-### Règles Firestore
+### Rï¿½gles Firestore
 
 ```bash
 firebase deploy --only firestore:rules

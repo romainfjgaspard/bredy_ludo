@@ -1,0 +1,41 @@
+{
+  "generatedAt": "2026-05-18T15:52:59.882Z",
+  "cookieHeader": "FCCDCF=%5Bnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2C%5B%5B32%2C%22%5B%5C%229a6e54e1-5744-4ec5-a47f-7a80436b2751%5C%22%2C%5B1779119567%2C706000000%5D%5D%22%5D%5D%5D; bggusername=pargass31; bggpassword=be4h6vyg36sohn9a4q10cbgces3idn3s7; SessionID=ec2bcbf24d7befb3bfe264cc2515f7af90cabf79u4617744; cc_cookie=%7B%22level%22%3A%5B%22necessary%22%2C%22analytics%22%2C%22shopping%22%2C%22socialmedia%22%5D%2C%22revision%22%3A1%2C%22rfc_cookie%22%3Atrue%7D; _ga=GA1.1.717934529.1779119574; _ga_GMNMCY4DVM=GS2.1.s1779119573$o1$g1$t1779119573$j60$l0$h0",
+  "cookies": [
+    {
+      "name": "FCCDCF",
+      "value": "%5Bnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2C%5B%5B32%2C%22%5B%5C%229a6e54e1-5744-4ec5-a47f-7a80436b2751%5C%22%2C%5B1779119567%2C706000000%5D%5D%22%5D%5D%5D",
+      "domain": ".boardgamegeek.com"
+    },
+    {
+      "name": "bggusername",
+      "value": "pargass31",
+      "domain": "boardgamegeek.com"
+    },
+    {
+      "name": "bggpassword",
+      "value": "be4h6vyg36sohn9a4q10cbgces3idn3s7",
+      "domain": "boardgamegeek.com"
+    },
+    {
+      "name": "SessionID",
+      "value": "ec2bcbf24d7befb3bfe264cc2515f7af90cabf79u4617744",
+      "domain": "boardgamegeek.com"
+    },
+    {
+      "name": "cc_cookie",
+      "value": "%7B%22level%22%3A%5B%22necessary%22%2C%22analytics%22%2C%22shopping%22%2C%22socialmedia%22%5D%2C%22revision%22%3A1%2C%22rfc_cookie%22%3Atrue%7D",
+      "domain": "boardgamegeek.com"
+    },
+    {
+      "name": "_ga",
+      "value": "GA1.1.717934529.1779119574",
+      "domain": ".boardgamegeek.com"
+    },
+    {
+      "name": "_ga_GMNMCY4DVM",
+      "value": "GS2.1.s1779119573$o1$g1$t1779119573$j60$l0$h0",
+      "domain": ".boardgamegeek.com"
+    }
+  ]
+}

@@ -40,6 +40,18 @@ const page = await context.newPage()
 // Aller sur la page de login BGG
 await page.goto('https://boardgamegeek.com/login', { waitUntil: 'networkidle', timeout: 30000 })
 
+// Fermer la popup de consentement cookies si elle apparaît (Funding Choices / fc-consent)
+// La popup bloque les clics — on la supprime directement du DOM
+const hadConsent = await page.evaluate(() => {
+  const overlay = document.querySelector('.fc-consent-root') as HTMLElement | null
+  if (overlay) { overlay.remove(); return true }
+  return false
+})
+if (hadConsent) {
+  console.log('🍪 Popup consentement supprimée du DOM')
+  await page.waitForTimeout(500)
+}
+
 // Remplir le formulaire de login
 await page.fill('input[name="username"], input[placeholder*="sername"], input[type="text"]', BGG_USERNAME)
 await page.fill('input[name="password"], input[placeholder*="assword"], input[type="password"]', BGG_PASSWORD)
@@ -47,7 +59,7 @@ await page.fill('input[name="password"], input[placeholder*="assword"], input[ty
 // Soumettre
 await Promise.all([
   page.waitForNavigation({ waitUntil: 'networkidle', timeout: 30000 }).catch(() => {}),
-  page.click('button[type="submit"], input[type="submit"], button:has-text("Sign In"), button:has-text("Login")')
+  page.click('button:has-text("Sign In"), button:has-text("Login"), button[type="submit"], input[type="submit"]')
 ])
 
 // Attendre que le login soit traité
