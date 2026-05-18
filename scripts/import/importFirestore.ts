@@ -11,6 +11,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const ROOT = path.resolve(__dirname, '../../')
 const RECONCILED = path.join(ROOT, 'data/import/reconciled-games.json')
 const DRY_RUN = process.argv.includes('--dry-run')
+const UPSERT = process.argv.includes('--upsert')
 
 const serviceAccount = process.env.FIREBASE_SERVICE_ACCOUNT
   ? JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT)
@@ -44,6 +45,9 @@ async function main() {
         age_min: d.minAge ?? 8,
         bgg_rating: d.bggRating,
         bgg_weight: d.bggWeight,
+        community_best_players: d.communityBestPlayers,
+        community_min_age: d.communityMinAge,
+        bgg_link: d.bggLink ?? (d.id ? `https://boardgamegeek.com/boardgame/${d.id}` : undefined),
         description: d.description,
       },
       createdAt: Timestamp.now(),
@@ -52,6 +56,15 @@ async function main() {
 
     if (DRY_RUN) {
       console.log(`[DRY] ${game.csvName} → bgg:${d.id}, type:${doc.type}, emplacement:${doc.emplacement}`)
+    } else if (UPSERT) {
+      const existing = await db.collection('games').where('nom', '==', game.csvName).limit(1).get()
+      if (!existing.empty) {
+        await existing.docs[0].ref.update({ ...doc, updatedAt: Timestamp.now() })
+        console.log(`🔄 ${game.csvName} (mis à jour)`)
+      } else {
+        await db.collection('games').add(doc)
+        console.log(`✅ ${game.csvName} (créé)`)
+      }
     } else {
       await db.collection('games').add(doc)
       console.log(`✅ ${game.csvName}`)

@@ -14,7 +14,9 @@ interface RawGame { nom: string }
 interface BggDetails {
   id: number; name: string; type: string;
   minPlayers?: number; maxPlayers?: number; minPlaytime?: number; maxPlaytime?: number;
-  minAge?: number; bggRating?: number; bggWeight?: number; thumbnail?: string; image?: string; description?: string;
+  minAge?: number; bggRating?: number; bggWeight?: number;
+  communityBestPlayers?: number; communityMinAge?: number; bggLink?: string;
+  thumbnail?: string; image?: string; description?: string;
 }
 interface Cache { searches: Record<string, { id: number; name: string; type: string }[]>; details: Record<number, BggDetails> }
 

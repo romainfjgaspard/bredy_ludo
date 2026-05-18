@@ -108,6 +108,10 @@ function fakeDetails(nom: string, bggId: number) {
       minAge: known.age,
       bggRating: known.rating,
       bggWeight: known.weight,
+      // Communauté : meilleur nb joueurs = milieu entre min et max, âge = officiel
+      communityBestPlayers: Math.round((known.minP + Math.min(known.maxP, 6)) / 2),
+      communityMinAge: known.age,
+      bggLink: `https://boardgamegeek.com/${known.ext ? 'boardgameexpansion' : 'boardgame'}/${known.id}`,
       description: `Fiche de test générée automatiquement pour ${nom}.`,
     }
   }
@@ -132,6 +136,9 @@ function fakeDetails(nom: string, bggId: number) {
     minAge: age,
     bggRating: rating,
     bggWeight: weight,
+    communityBestPlayers: Math.round((minP + Math.min(Math.min(maxP, 8), 6)) / 2),
+    communityMinAge: age,
+    bggLink: `https://boardgamegeek.com/boardgame/${bggId}`,
     description: `Fiche de test générée automatiquement pour ${nom}.`,
   }
 }

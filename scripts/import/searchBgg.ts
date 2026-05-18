@@ -39,6 +39,12 @@ interface BggDetails {
   minAge?: number
   bggRating?: number
   bggWeight?: number
+  /** Nombre de joueurs idéal selon les votes de la communauté BGG */
+  communityBestPlayers?: number
+  /** Âge minimum selon les votes de la communauté BGG */
+  communityMinAge?: number
+  /** Lien BGG : https://boardgamegeek.com/boardgame/{id} */
+  bggLink?: string
   thumbnail?: string
   image?: string
   description?: string
@@ -172,6 +178,50 @@ async function getBggClient(): Promise<AxiosInstance> {
   return client
 }
 
+/** Extrait le nombre de joueurs idéal depuis le poll BGG suggested_numplayers */
+function extractCommunityBestPlayers(item: any): number | undefined {
+  const polls = Array.isArray(item.poll) ? item.poll : item.poll ? [item.poll] : []
+  const poll = polls.find((p: any) => p['@_name'] === 'suggested_numplayers')
+  if (!poll) return undefined
+  const resultGroups = Array.isArray(poll.results) ? poll.results : poll.results ? [poll.results] : []
+  let bestNumPlayers: number | undefined
+  let bestVotes = 0
+  for (const group of resultGroups) {
+    const numPlayers = parseInt(group['@_numplayers'] ?? '')
+    if (isNaN(numPlayers)) continue
+    const results = Array.isArray(group.result) ? group.result : group.result ? [group.result] : []
+    const bestEntry = results.find((r: any) => r['@_value'] === 'Best')
+    const votes = parseInt(bestEntry?.['@_numvotes'] ?? '0')
+    if (votes > bestVotes) { bestVotes = votes; bestNumPlayers = numPlayers }
+  }
+  return bestVotes > 0 ? bestNumPlayers : undefined
+}
+
+/** Extrait l'âge minimum communautaire depuis le poll BGG suggested_playerage */
+function extractCommunityMinAge(item: any): number | undefined {
+  const polls = Array.isArray(item.poll) ? item.poll : item.poll ? [item.poll] : []
+  const poll = polls.find((p: any) => p['@_name'] === 'suggested_playerage')
+  if (!poll) return undefined
+  const results = Array.isArray(poll.results?.result) ? poll.results.result : poll.results?.result ? [poll.results.result] : []
+  let maxVotes = 0
+  let communityAge: number | undefined
+  for (const r of results) {
+    const votes = parseInt(r['@_numvotes'] ?? '0')
+    if (votes > maxVotes) {
+      maxVotes = votes
+      const parsed = parseInt(r['@_value'] ?? '')
+      if (!isNaN(parsed)) communityAge = parsed
+    }
+  }
+  return maxVotes > 0 ? communityAge : undefined
+}
+
+/** Construit le lien BGG selon le type du jeu */
+function buildBggLink(bggId: number, type: string): string {
+  const slug = type === 'boardgameexpansion' ? 'boardgameexpansion' : 'boardgame'
+  return `https://boardgamegeek.com/${slug}/${bggId}`
+}
+
 async function searchBgg(client: AxiosInstance, query: string): Promise<BggSearchResult[]> {
   const url = `https://boardgamegeek.com/xmlapi2/search?query=${encodeURIComponent(query)}&type=boardgame,boardgameexpansion`
   const res = await withRetry(() => throttledGet(client, url))
@@ -198,10 +248,11 @@ async function fetchDetails(client: AxiosInstance, bggId: number): Promise<BggDe
   const primaryName = names.find((n: any) => n['@_type'] === 'primary')?.['@_value'] ?? names[0]?.['@_value'] ?? ''
 
   const ratings = item.statistics?.ratings
+  const type = item['@_type'] ?? 'boardgame'
   return {
     id: bggId,
     name: primaryName,
-    type: item['@_type'],
+    type,
     yearPublished: item.yearpublished?.['@_value'] ? parseInt(item.yearpublished['@_value']) : undefined,
     minPlayers: parseInt(item.minplayers?.['@_value'] ?? '0') || undefined,
     maxPlayers: parseInt(item.maxplayers?.['@_value'] ?? '0') || undefined,
@@ -210,6 +261,9 @@ async function fetchDetails(client: AxiosInstance, bggId: number): Promise<BggDe
     minAge: parseInt(item.minage?.['@_value'] ?? '0') || undefined,
     bggRating: parseFloat(ratings?.average?.['@_value'] ?? '0') || undefined,
     bggWeight: parseFloat(ratings?.averageweight?.['@_value'] ?? '0') || undefined,
+    communityBestPlayers: extractCommunityBestPlayers(item),
+    communityMinAge: extractCommunityMinAge(item),
+    bggLink: buildBggLink(bggId, type),
     thumbnail: item.thumbnail,
     image: item.image,
     description: typeof item.description === 'string' ? item.description.substring(0, 500) : undefined,

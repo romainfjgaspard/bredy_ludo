@@ -25,6 +25,9 @@
               <div class="bg-gray-50 rounded-lg p-2">
                 <div class="font-semibold">{{ game.metadata.nb_joueurs_min }}–{{ game.metadata.nb_joueurs_max }}</div>
                 <div class="text-xs text-gray-500">Joueurs</div>
+                <div v-if="game.metadata.community_best_players" class="text-xs text-indigo-500 mt-0.5">
+                  ★ {{ game.metadata.community_best_players }} selon BGG
+                </div>
               </div>
               <div class="bg-gray-50 rounded-lg p-2">
                 <div class="font-semibold">{{ game.metadata.duree_min }}–{{ game.metadata.duree_max }}</div>
@@ -33,7 +36,29 @@
               <div class="bg-gray-50 rounded-lg p-2">
                 <div class="font-semibold">{{ game.metadata.age_min }}+</div>
                 <div class="text-xs text-gray-500">Ans</div>
+                <div v-if="game.metadata.community_min_age && game.metadata.community_min_age !== game.metadata.age_min" class="text-xs text-indigo-500 mt-0.5">
+                  ★ {{ game.metadata.community_min_age }}+ selon BGG
+                </div>
               </div>
+            </div>
+
+            <!-- Infos BGG -->
+            <div v-if="game.metadata?.bgg_rating || game.metadata?.bgg_weight || game.metadata?.bgg_link" class="flex items-center gap-3 text-sm flex-wrap">
+              <span v-if="game.metadata?.bgg_rating" class="text-gray-500">
+                Note BGG : <span class="font-semibold text-gray-700">{{ game.metadata.bgg_rating?.toFixed(1) }}/10</span>
+              </span>
+              <span v-if="game.metadata?.bgg_weight" class="text-gray-500">
+                Complexité : <span class="font-semibold text-gray-700">{{ game.metadata.bgg_weight?.toFixed(1) }}/5</span>
+              </span>
+              <a
+                v-if="game.metadata?.bgg_link"
+                :href="game.metadata.bgg_link"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="ml-auto text-indigo-600 hover:underline text-xs flex items-center gap-1"
+              >
+                Voir sur BGG ↗
+              </a>
             </div>
 
             <!-- Notes par profil -->

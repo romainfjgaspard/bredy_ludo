@@ -15,6 +15,12 @@ export interface GameMetadata {
   age_min: number
   bgg_rating?: number
   bgg_weight?: number
+  /** Nombre de joueurs idéal selon la communauté BGG */
+  community_best_players?: number
+  /** Âge minimum selon la communauté BGG */
+  community_min_age?: number
+  /** Lien vers la fiche sur BoardGameGeek */
+  bgg_link?: string
   description?: string
   tutorial_url?: string
 }

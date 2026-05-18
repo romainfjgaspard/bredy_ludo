@@ -19,6 +19,7 @@
     "import:check": "tsx scripts/import/checkImages.ts",
     "import:dry": "tsx scripts/import/importFirestore.ts --dry-run",
     "import:run": "tsx scripts/import/importFirestore.ts",
+    "import:update": "tsx scripts/import/importFirestore.ts --upsert",
     "export": "tsx scripts/export/exportFirestore.ts"
   },
   "dependencies": {
