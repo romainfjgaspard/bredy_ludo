@@ -8,6 +8,8 @@ export function useWheel() {
   const gamesStore = useGamesStore()
   const result = ref<Game | null>(null)
   const isSpinning = ref(false)
+  const spinTrigger = ref<{ index: number; id: number } | null>(null)
+  let spinIdCounter = 0
 
   function buildCandidatesFromFiltered(games: Game[]) {
     wheelStore.setAll(games)
@@ -18,22 +20,29 @@ export function useWheel() {
     wheelStore.setAll(games)
   }
 
-  async function spin() {
+  function spin() {
     const candidates = wheelStore.uniqueCandidates
-    if (candidates.length === 0) return
+    if (candidates.length === 0 || isSpinning.value) return
+    result.value = null
     if (candidates.length === 1) {
       result.value = candidates[0]
       return
     }
-    isSpinning.value = true
-    await new Promise(resolve => setTimeout(resolve, 3000))
     const idx = Math.floor(Math.random() * candidates.length)
-    result.value = candidates[idx]
+    spinTrigger.value = { index: idx, id: ++spinIdCounter }
+    isSpinning.value = true
+  }
+
+  /** Appelé par le composant canvas quand l'animation se termine */
+  function handleSpinComplete(idx: number) {
+    result.value = wheelStore.uniqueCandidates[idx] ?? null
     isSpinning.value = false
   }
 
   function reset() {
     result.value = null
+    isSpinning.value = false
+    spinTrigger.value = null
     wheelStore.clear()
   }
 
@@ -41,9 +50,12 @@ export function useWheel() {
     candidates: computed(() => wheelStore.uniqueCandidates),
     result,
     isSpinning,
+    spinTrigger,
     spin,
     reset,
+    handleSpinComplete,
     buildCandidatesFromFiltered,
     buildCandidatesFromAll,
   }
 }
+
