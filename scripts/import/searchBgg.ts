@@ -16,6 +16,7 @@ const CACHE = path.join(ROOT, 'data/import/bgg-cache.json')
 const ONLY_MISSING = process.argv.includes('--only-missing')
 const BGG_USERNAME = process.env.BGG_USERNAME
 const BGG_PASSWORD = process.env.BGG_PASSWORD
+const COOKIES_FILE = path.join(ROOT, 'data/import/bgg-cookies.json')
 
 const parser = new XMLParser({ ignoreAttributes: false, attributeNamePrefix: '@_' })
 
@@ -64,45 +65,85 @@ function normalize(text: string): string {
 }
 
 async function withRetry<T>(fn: () => Promise<T>, retries = 5, delay = 3000): Promise<T> {
+  let lastError: any
   for (let i = 0; i < retries; i++) {
     try {
       const result = await fn()
       // BGG returns 202 when processing — retry after delay
       if ((result as any)?.status === 202) {
+        console.log(`  ⏳ BGG 202 — attente ${delay}ms (tentative ${i + 1}/${retries})…`)
         await new Promise(r => setTimeout(r, delay))
         continue
       }
       return result
     } catch (e: any) {
-      // 429 or 401 → wait longer
+      lastError = e
       const status = e?.response?.status
-      if (status === 429 || status === 401) {
-        await new Promise(r => setTimeout(r, delay * 3 * (i + 1)))
-        continue
-      }
-      if (i === retries - 1) throw e
-      await new Promise(r => setTimeout(r, delay * Math.pow(2, i)))
+      const body = e?.response?.data ? String(e.response.data).substring(0, 200) : ''
+      console.warn(`  ⚠️  Tentative ${i + 1}/${retries} — HTTP ${status ?? e?.code ?? 'ERR'}: ${body || e?.message}`)
+      const waitMs = (status === 429 || status === 401)
+        ? delay * 3 * (i + 1)
+        : delay * Math.pow(2, i)
+      if (i < retries - 1) await new Promise(r => setTimeout(r, waitMs))
     }
   }
-  throw new Error('Max retries exceeded')
+  throw lastError ?? new Error('Max retries exceeded')
 }
 
-const throttledGet = pThrottle({ limit: 1, interval: 1200 })(
+const throttledGet = pThrottle({ limit: 1, interval: 1500 })(
   (client: AxiosInstance, url: string) => client.get(url, {
-    timeout: 15000,
+    timeout: 30000,
     responseType: 'text',
   })
 )
 
+/**
+ * BGG sets valid cookies THEN immediately "deletes" them via domain=.boardgamegeek.com + Max-Age=0.
+ * We keep only the cookies that have a positive MaxAge or a future expiry (skip deletion entries).
+ */
+function extractValidCookies(setCookieHeaders: string[]): string {
+  const valid: string[] = []
+  for (const header of setCookieHeaders) {
+    const parts = header.split(';').map(p => p.trim())
+    const nameValue = parts[0]
+    const maxAgePart = parts.find(p => p.toLowerCase().startsWith('max-age='))
+    const expiresPart = parts.find(p => p.toLowerCase().startsWith('expires='))
+    // Skip deletion cookies (Max-Age=0)
+    if (maxAgePart && maxAgePart.split('=')[1].trim() === '0') continue
+    // Skip already-expired cookies
+    if (expiresPart) {
+      const expDate = new Date(expiresPart.substring(expiresPart.indexOf('=') + 1))
+      if (!isNaN(expDate.getTime()) && expDate.getTime() < Date.now()) continue
+    }
+    valid.push(nameValue)
+  }
+  return valid.join('; ')
+}
+
 async function getBggClient(): Promise<AxiosInstance> {
   const client = axios.create({
     headers: {
-      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
       'Accept': 'text/xml, application/xml, */*',
+      'Accept-Language': 'fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7',
     },
-    withCredentials: true,
   })
 
+  // Priorité 1 : cookies Playwright (bggLogin.ts)
+  if (fs.existsSync(COOKIES_FILE)) {
+    const saved = JSON.parse(fs.readFileSync(COOKIES_FILE, 'utf-8'))
+    const ageDays = (Date.now() - new Date(saved.generatedAt).getTime()) / 86400000
+    if (ageDays < 1 && saved.cookieHeader) {
+      const names = saved.cookieHeader.split(';').map((c: string) => c.split('=')[0].trim()).filter(Boolean)
+      client.defaults.headers.common['Cookie'] = saved.cookieHeader
+      console.log(`🍪 Cookies Playwright chargés (${names.length}: ${names.join(', ')})`)
+      return client
+    } else {
+      console.warn('⚠️  bgg-cookies.json expiré (>1 jour) — relancez bggLogin.ts')
+    }
+  }
+
+  // Priorité 2 : login API /login/api/v1
   if (BGG_USERNAME && BGG_PASSWORD) {
     console.log(`🔐 Connexion BGG avec le compte ${BGG_USERNAME}…`)
     try {
@@ -112,21 +153,20 @@ async function getBggClient(): Promise<AxiosInstance> {
         headers: { 'Content-Type': 'application/json' },
         validateStatus: s => s < 500,
       })
-      const setCookie = loginRes.headers['set-cookie']
-      if (setCookie) {
-        const cookie = Array.isArray(setCookie) ? setCookie.join('; ') : setCookie
-        client.defaults.headers['Cookie'] = cookie
-        console.log('✅ Connecté à BGG')
+      if (loginRes.status < 400) {
+        const setCookie = loginRes.headers['set-cookie'] ?? []
+        const cookie = extractValidCookies(setCookie)
+        const names = cookie.split(';').map(c => c.split('=')[0].trim()).filter(Boolean)
+        client.defaults.headers.common['Cookie'] = cookie
+        console.log(`✅ Connecté à BGG (${names.length} cookies: ${names.join(', ')})`)
       } else {
-        console.warn('⚠️  Login BGG sans cookie — vérifier les identifiants')
+        console.warn(`⚠️  Login BGG échoué (HTTP ${loginRes.status}) — vérifier les identifiants`)
       }
     } catch (e) {
       console.warn('⚠️  Échec du login BGG:', (e as Error).message)
     }
   } else {
     console.warn('⚠️  BGG_USERNAME / BGG_PASSWORD non définis dans .env.local')
-    console.warn('   Ajoutez-les pour authentifier les requêtes BGG')
-    console.warn('   Exemple: BGG_USERNAME=votre_login BGG_PASSWORD=votre_mdp')
   }
 
   return client
