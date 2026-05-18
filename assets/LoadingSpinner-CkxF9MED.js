@@ -1,0 +1,1 @@
+import{B as e,M as t,_ as n,k as r}from"./index-B6wdVXeL.js";var i={},a={class:`flex items-center justify-center p-8`};function o(n,i){return e(),t(`div`,a,[...i[0]||=[r(`div`,{class:`animate-spin rounded-full h-10 w-10 border-4 border-indigo-500 border-t-transparent`},null,-1)]])}var s=n(i,[[`render`,o]]);export{s as t};
