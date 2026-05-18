@@ -1,44 +1,44 @@
 <template>
   <form class="space-y-3" @submit.prevent="submit">
     <div>
-      <label class="text-sm text-gray-600 mb-1 block">Nom *</label>
+      <label class="text-sm text-base-content/60 mb-1 block">Nom *</label>
       <input v-model="form.nom" required class="input" />
     </div>
     <div>
-      <label class="text-sm text-gray-600 mb-1 block">Type</label>
+      <label class="text-sm text-base-content/60 mb-1 block">Type</label>
       <select v-model="form.type" class="input">
         <option value="base">Jeu de base</option>
         <option value="extension">Extension</option>
       </select>
     </div>
     <div>
-      <label class="text-sm text-gray-600 mb-1 block">Emplacement *</label>
+      <label class="text-sm text-base-content/60 mb-1 block">Emplacement *</label>
       <LocationPicker v-model="form.emplacement" />
     </div>
     <div class="grid grid-cols-2 gap-3">
       <div>
-        <label class="text-sm text-gray-600 mb-1 block">Joueurs min</label>
+        <label class="text-sm text-base-content/60 mb-1 block">Joueurs min</label>
         <input v-model.number="form.nb_joueurs_min" type="number" min="1" class="input" />
       </div>
       <div>
-        <label class="text-sm text-gray-600 mb-1 block">Joueurs max</label>
+        <label class="text-sm text-base-content/60 mb-1 block">Joueurs max</label>
         <input v-model.number="form.nb_joueurs_max" type="number" min="1" class="input" />
       </div>
       <div>
-        <label class="text-sm text-gray-600 mb-1 block">Durée min (min)</label>
+        <label class="text-sm text-base-content/60 mb-1 block">Durée min (min)</label>
         <input v-model.number="form.duree_min" type="number" min="0" class="input" />
       </div>
       <div>
-        <label class="text-sm text-gray-600 mb-1 block">Durée max (min)</label>
+        <label class="text-sm text-base-content/60 mb-1 block">Durée max (min)</label>
         <input v-model.number="form.duree_max" type="number" min="0" class="input" />
       </div>
     </div>
     <div>
-      <label class="text-sm text-gray-600 mb-1 block">Âge minimum</label>
+      <label class="text-sm text-base-content/60 mb-1 block">Âge minimum</label>
       <input v-model.number="form.age_min" type="number" min="0" class="input" />
     </div>
     <div>
-      <label class="text-sm text-gray-600 mb-1 block">ID BGG</label>
+      <label class="text-sm text-base-content/60 mb-1 block">ID BGG</label>
       <input v-model.number="form.bgg_id" type="number" class="input" />
     </div>
 

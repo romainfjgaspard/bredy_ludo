@@ -6,7 +6,7 @@
       type="button"
       :class="[
         'text-2xl transition-colors cursor-pointer',
-        star <= (hovered || modelValue || 0) ? 'text-yellow-400' : 'text-gray-300',
+        star <= (hovered || modelValue || 0) ? 'text-yellow-400' : 'text-base-content/30',
         !readonly ? 'hover:text-yellow-300' : '',
       ]"
       @mouseenter="!readonly && (hovered = star)"

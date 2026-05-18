@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white rounded-xl shadow p-3">
+  <div class="bg-base-100 rounded-xl shadow p-3">
     <div class="flex items-center justify-between mb-2">
       <p class="font-semibold text-sm">{{ label }}</p>
       <span :class="['text-2xl font-bold', colorClass]">{{ value }}</span>

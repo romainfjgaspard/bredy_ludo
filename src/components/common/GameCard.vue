@@ -1,13 +1,13 @@
 <template>
   <RouterLink
     :to="{ name: 'game-detail', params: { id: game.id } }"
-    class="block bg-white rounded-xl shadow hover:shadow-md transition-shadow overflow-hidden"
+    class="block bg-base-100 rounded-xl shadow hover:shadow-md transition-shadow overflow-hidden"
   >
     <div class="relative">
       <img
         :src="gameImageUrl"
         :alt="game.nom"
-        class="w-full h-32 object-cover bg-gray-100"
+        class="w-full h-32 object-cover bg-base-200"
         loading="lazy"
         @error="onImgError"
       />
@@ -18,7 +18,7 @@
     </div>
     <div class="p-3">
       <h3 class="font-semibold text-sm leading-tight line-clamp-2">{{ game.nom }}</h3>
-      <div class="mt-1 flex items-center justify-between text-xs text-gray-500">
+      <div class="mt-1 flex items-center justify-between text-xs text-base-content/50">
         <span v-if="game.metadata">
           {{ game.metadata.nb_joueurs_min }}–{{ game.metadata.nb_joueurs_max }} j.
           · {{ game.metadata.duree_min }}–{{ game.metadata.duree_max }} min

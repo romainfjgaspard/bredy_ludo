@@ -7,7 +7,7 @@
         'py-2 rounded-lg text-sm font-medium border transition-colors',
         modelValue === loc
           ? 'bg-indigo-600 text-white border-indigo-600'
-          : 'bg-white text-gray-700 border-gray-300 hover:border-indigo-400',
+          : 'bg-base-100 text-base-content/80 border-gray-300 hover:border-indigo-400',
       ]"
       @click="emit('update:modelValue', loc)"
     >

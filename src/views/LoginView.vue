@@ -1,9 +1,9 @@
 <template>
-  <div class="min-h-screen bg-gray-50 flex items-center justify-center p-4">
-    <div class="bg-white rounded-2xl shadow-lg p-6 w-full max-w-sm space-y-4">
+  <div class="min-h-screen bg-base-200 flex items-center justify-center p-4">
+    <div class="bg-base-100 rounded-2xl shadow-lg p-6 w-full max-w-sm space-y-4">
       <h1 class="text-xl font-bold text-center">Connexion Admin</h1>
       <div>
-        <label class="text-sm text-gray-600 mb-1 block">Email</label>
+        <label class="text-sm text-base-content/60 mb-1 block">Email</label>
         <input
           v-model="email"
           type="email"
@@ -12,7 +12,7 @@
         />
       </div>
       <div>
-        <label class="text-sm text-gray-600 mb-1 block">Mot de passe</label>
+        <label class="text-sm text-base-content/60 mb-1 block">Mot de passe</label>
         <input
           v-model="password"
           type="password"

@@ -5,7 +5,7 @@
       <span v-if="note !== null" class="text-amber-400 font-semibold">
         {{ noteMode === 'bgg' ? note.toFixed(1) : '★'.repeat(note) }}
       </span>
-      <span v-else class="text-gray-300 text-xs">—</span>
+      <span v-else class="text-base-content/30 text-xs">—</span>
     </template>
 
     <!-- Mode membre : étoiles toujours cliquables (redirect login si pas admin) -->

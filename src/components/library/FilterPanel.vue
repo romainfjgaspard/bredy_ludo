@@ -1,8 +1,8 @@
 <template>
-  <div class="bg-white rounded-xl shadow overflow-hidden">
+  <div class="bg-base-100 rounded-xl shadow overflow-hidden">
     <!-- Toggle header -->
     <button
-      class="w-full flex items-center justify-between px-4 py-3 text-sm font-semibold text-gray-700 hover:bg-gray-50 transition-colors"
+      class="w-full flex items-center justify-between px-4 py-3 text-sm font-semibold text-base-content/80 hover:bg-base-200 transition-colors"
       @click="open = !open"
     >
       <span class="flex items-center gap-2">
@@ -12,17 +12,17 @@
         Filtres
         <span v-if="activeCount > 0" class="bg-indigo-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">{{ activeCount }}</span>
       </span>
-      <svg class="w-4 h-4 text-gray-400 transition-transform" :class="open ? 'rotate-180' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <svg class="w-4 h-4 text-base-content/40 transition-transform" :class="open ? 'rotate-180' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
         <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
       </svg>
     </button>
 
     <!-- Filter body -->
     <Transition name="slide">
-      <div v-if="open" class="px-4 pb-4 space-y-4 border-t border-gray-100">
+      <div v-if="open" class="px-4 pb-4 space-y-4 border-t border-base-200">
         <!-- Nb joueurs -->
         <div class="pt-3">
-          <label class="text-xs text-gray-500 mb-1 block font-medium">Nombre de joueurs</label>
+          <label class="text-xs text-base-content/50 mb-1 block font-medium">Nombre de joueurs</label>
           <div class="flex items-center gap-2">
             <button
               v-for="n in [2,3,4,5,6,7,8]"
@@ -30,15 +30,15 @@
               class="w-8 h-8 rounded-lg text-xs font-semibold transition-colors"
               :class="filters.players === n
                 ? 'bg-indigo-600 text-white'
-                : 'bg-gray-100 text-gray-600 hover:bg-gray-200'"
+                : 'bg-base-200 text-base-content/60 hover:bg-gray-200'"
               @click="filters.players = filters.players === n ? null : n"
             >{{ n }}</button>
-            <span class="text-xs text-gray-400">+</span>
+            <span class="text-xs text-base-content/40">+</span>
             <button
               class="px-2 h-8 rounded-lg text-xs font-semibold transition-colors"
               :class="filters.players === 9
                 ? 'bg-indigo-600 text-white'
-                : 'bg-gray-100 text-gray-600 hover:bg-gray-200'"
+                : 'bg-base-200 text-base-content/60 hover:bg-gray-200'"
               @click="filters.players = filters.players === 9 ? null : 9"
             >9+</button>
           </div>
@@ -46,11 +46,11 @@
 
         <!-- Durée -->
         <div>
-          <label class="text-xs text-gray-500 mb-1 block font-medium">Durée (min)</label>
+          <label class="text-xs text-base-content/50 mb-1 block font-medium">Durée (min)</label>
           <div class="flex gap-2 items-center">
             <input v-model.number="filters.durationMin" type="number" min="0" max="999" placeholder="Min"
               class="w-20 border rounded-lg px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-300" />
-            <span class="text-gray-400">–</span>
+            <span class="text-base-content/40">–</span>
             <input v-model.number="filters.durationMax" type="number" min="0" max="999" placeholder="Max"
               class="w-20 border rounded-lg px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-300" />
           </div>
@@ -58,31 +58,31 @@
 
         <!-- Âge -->
         <div>
-          <label class="text-xs text-gray-500 mb-1 block font-medium">Âge minimum requis (ans)</label>
+          <label class="text-xs text-base-content/50 mb-1 block font-medium">Âge minimum requis (ans)</label>
           <input v-model.number="filters.ageMin" type="number" min="0" max="99" placeholder="Ex: 8"
             class="w-28 border rounded-lg px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-300" />
         </div>
 
         <!-- Note minimale -->
         <div>
-          <label class="text-xs text-gray-500 mb-1 block font-medium">Note famille minimale</label>
+          <label class="text-xs text-base-content/50 mb-1 block font-medium">Note famille minimale</label>
           <div class="flex gap-1">
             <button
               v-for="star in [1,2,3,4,5]"
               :key="star"
               class="text-lg transition-colors"
-              :class="filters.minRating !== null && filters.minRating >= star ? 'text-amber-400' : 'text-gray-300 hover:text-amber-300'"
+              :class="filters.minRating !== null && filters.minRating >= star ? 'text-amber-400' : 'text-base-content/30 hover:text-amber-300'"
               @click="filters.minRating = filters.minRating === star ? null : star"
             >★</button>
-            <span v-if="filters.minRating" class="text-xs text-gray-400 self-center ml-1">min {{ filters.minRating }}★</span>
+            <span v-if="filters.minRating" class="text-xs text-base-content/40 self-center ml-1">min {{ filters.minRating }}★</span>
           </div>
         </div>
 
         <!-- Catégorie -->
-        <div v-if="categories.length > 0">
-          <label class="text-xs text-gray-500 mb-1 block font-medium">Catégorie</label>
+        <div>
+          <label class="text-xs text-base-content/50 mb-1 block font-medium">Catégorie</label>
           <select v-model="filters.category"
-            class="w-full border rounded-lg px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-300 bg-white">
+            class="w-full border rounded-lg px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-300 bg-base-100">
             <option :value="null">Toutes</option>
             <option v-for="cat in categories" :key="cat" :value="cat">{{ cat }}</option>
           </select>
@@ -90,7 +90,7 @@
 
         <!-- Dernière partie -->
         <div>
-          <label class="text-xs text-gray-500 mb-1 block font-medium">Dernière partie</label>
+          <label class="text-xs text-base-content/50 mb-1 block font-medium">Dernière partie</label>
           <div class="flex flex-wrap gap-1">
             <button
               v-for="opt in lastPlayedOptions"
@@ -98,7 +98,7 @@
               class="text-xs px-2.5 py-1 rounded-full border transition-colors"
               :class="filters.lastPlayedFilter === opt.value
                 ? 'bg-indigo-600 text-white border-indigo-600'
-                : 'bg-white text-gray-600 border-gray-200 hover:bg-gray-50'"
+                : 'bg-base-100 text-base-content/60 border-base-300 hover:bg-base-200'"
               @click="filters.lastPlayedFilter = opt.value"
             >{{ opt.label }}</button>
           </div>
@@ -107,7 +107,7 @@
         <!-- Extensions -->
         <label class="flex items-center gap-2 text-sm">
           <input v-model="filters.includeExtensions" type="checkbox" class="rounded accent-indigo-500" />
-          <span class="text-gray-600">Inclure les extensions</span>
+          <span class="text-base-content/60">Inclure les extensions</span>
         </label>
 
         <!-- Reset -->

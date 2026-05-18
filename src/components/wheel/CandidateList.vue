@@ -1,14 +1,14 @@
 <template>
-  <div class="bg-white rounded-xl shadow overflow-hidden">
+  <div class="bg-base-100 rounded-xl shadow overflow-hidden">
     <!-- Header -->
-    <div class="flex items-center justify-between px-3 py-2.5 border-b border-gray-100">
-      <span class="font-semibold text-sm text-gray-700">
+    <div class="flex items-center justify-between px-3 py-2.5 border-b border-base-200">
+      <span class="font-semibold text-sm text-base-content/80">
         {{ wheelStore.uniqueCandidates.length }} jeu{{ wheelStore.uniqueCandidates.length > 1 ? 'x' : '' }} sélectionné{{ wheelStore.uniqueCandidates.length > 1 ? 's' : '' }}
       </span>
       <div class="flex items-center gap-2">
         <button class="text-xs text-indigo-500 hover:text-indigo-700 font-medium" @click="selectAll">Tout</button>
-        <span class="text-gray-300">|</span>
-        <button class="text-xs text-gray-400 hover:text-red-500" @click="wheelStore.clear()">Aucun</button>
+        <span class="text-base-content/30">|</span>
+        <button class="text-xs text-base-content/40 hover:text-red-500" @click="wheelStore.clear()">Aucun</button>
       </div>
     </div>
 
@@ -17,7 +17,7 @@
       <label
         v-for="game in filteredGames"
         :key="game.id"
-        class="flex items-center gap-2 px-3 py-2 hover:bg-gray-50 cursor-pointer border-b border-gray-50 last:border-0"
+        class="flex items-center gap-2 px-3 py-2 hover:bg-base-200 cursor-pointer border-b border-base-200 last:border-0"
       >
         <input
           type="checkbox"
@@ -25,17 +25,17 @@
           class="rounded accent-indigo-500 shrink-0 w-4 h-4"
           @change="toggle(game)"
         />
-        <span class="text-sm text-gray-700 truncate flex-1">{{ game.nom }}</span>
-        <span v-if="game.emplacement" class="text-xs text-gray-400 shrink-0">{{ game.emplacement }}</span>
+        <span class="text-sm text-base-content/80 truncate flex-1">{{ game.nom }}</span>
+        <span v-if="game.emplacement" class="text-xs text-base-content/40 shrink-0">{{ game.emplacement }}</span>
       </label>
-      <p v-if="filteredGames.length === 0" class="px-3 py-4 text-sm text-gray-400 text-center">
+      <p v-if="filteredGames.length === 0" class="px-3 py-4 text-sm text-base-content/40 text-center">
         Aucun jeu pour ces filtres
       </p>
     </div>
 
     <!-- Ajouter manuellement -->
-    <div class="border-t border-gray-100 px-3 py-2.5">
-      <p class="text-xs text-gray-400 mb-1.5 font-medium">Ajouter manuellement</p>
+    <div class="border-t border-base-200 px-3 py-2.5">
+      <p class="text-xs text-base-content/40 mb-1.5 font-medium">Ajouter manuellement</p>
       <div class="relative">
         <input
           v-model="searchQuery"
@@ -47,7 +47,7 @@
         />
         <ul
           v-if="suggestions.length > 0"
-          class="absolute z-20 w-full bg-white border rounded-lg shadow-lg mt-1 max-h-40 overflow-y-auto"
+          class="absolute z-20 w-full bg-base-100 border rounded-lg shadow-lg mt-1 max-h-40 overflow-y-auto"
         >
           <li
             v-for="game in suggestions"
@@ -56,7 +56,7 @@
             @click="addGame(game)"
           >
             <span>{{ game.nom }}</span>
-            <span class="text-gray-400 ml-2">{{ game.emplacement }}</span>
+            <span class="text-base-content/40 ml-2">{{ game.emplacement }}</span>
           </li>
         </ul>
       </div>

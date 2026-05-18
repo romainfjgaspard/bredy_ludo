@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-gray-50 pb-20">
+  <div class="min-h-screen bg-base-200 pb-20">
     <div class="max-w-2xl mx-auto px-4 pt-4 space-y-4">
       <div class="flex items-center justify-between">
         <h1 class="text-2xl font-bold">Statistiques</h1>
@@ -18,28 +18,28 @@
         </div>
 
         <!-- Jeux notés par membre -->
-        <div class="bg-white rounded-xl shadow p-4">
+        <div class="bg-base-100 rounded-xl shadow p-4">
           <h2 class="font-semibold mb-3">Notes par membre</h2>
           <div class="space-y-2">
             <div v-for="member in memberRatings" :key="member.profile" class="flex items-center gap-3 text-sm">
-              <span class="w-24 text-gray-600 shrink-0">{{ member.profile }}</span>
-              <div class="flex-1 bg-gray-100 rounded-full h-2">
+              <span class="w-24 text-base-content/60 shrink-0">{{ member.profile }}</span>
+              <div class="flex-1 bg-base-200 rounded-full h-2">
                 <div
                   class="bg-indigo-400 h-2 rounded-full transition-all"
                   :style="{ width: `${totalGames > 0 ? (member.count / totalGames * 100) : 0}%` }"
                 />
               </div>
-              <span class="text-gray-500 shrink-0 w-16 text-right">{{ member.count }}/{{ totalGames }}</span>
+              <span class="text-base-content/50 shrink-0 w-16 text-right">{{ member.count }}/{{ totalGames }}</span>
             </div>
           </div>
         </div>
 
         <!-- Top jeux joués -->
-        <div class="bg-white rounded-xl shadow p-4">
+        <div class="bg-base-100 rounded-xl shadow p-4">
           <h2 class="font-semibold mb-3">Top jeux joués</h2>
           <ol class="space-y-2">
             <li v-for="(item, i) in topGames" :key="item.gameId" class="flex items-center gap-2 text-sm">
-              <span class="w-5 text-gray-400 font-mono">{{ i + 1 }}.</span>
+              <span class="w-5 text-base-content/40 font-mono">{{ i + 1 }}.</span>
               <span class="flex-1 truncate">{{ item.name }}</span>
               <span class="font-semibold text-indigo-600">{{ item.count }} partie{{ item.count > 1 ? 's' : '' }}</span>
             </li>
@@ -47,15 +47,15 @@
         </div>
 
         <!-- Parties par mois -->
-        <div class="bg-white rounded-xl shadow p-4">
+        <div class="bg-base-100 rounded-xl shadow p-4">
           <h2 class="font-semibold mb-3">Parties par mois</h2>
           <ChartWrapper type="bar" :data="playsPerMonthData" />
         </div>
 
         <!-- Jeux oubliés -->
-        <div v-if="forgottenGames.length > 0" class="bg-white rounded-xl shadow p-4">
+        <div v-if="forgottenGames.length > 0" class="bg-base-100 rounded-xl shadow p-4">
           <h2 class="font-semibold mb-3 text-amber-700">Jeux oubliés (> 6 mois)</h2>
-          <ul class="space-y-1 text-sm text-gray-600">
+          <ul class="space-y-1 text-sm text-base-content/60">
             <li v-for="game in forgottenGames" :key="game.id">{{ game.nom }}</li>
           </ul>
         </div>

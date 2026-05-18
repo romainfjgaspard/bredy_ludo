@@ -46,6 +46,7 @@
     "@vitest/coverage-v8": "^4.1.6",
     "@vue/test-utils": "^2.4.10",
     "@vue/tsconfig": "^0.9.1",
+    "daisyui": "^5.5.20",
     "dotenv": "^17.4.2",
     "firebase-tools": "^15.18.0",
     "jsdom": "^29.1.1",

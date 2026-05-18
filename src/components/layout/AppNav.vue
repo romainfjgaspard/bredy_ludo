@@ -1,12 +1,12 @@
 <template>
-  <nav class="fixed bottom-0 inset-x-0 z-40 bg-white border-t border-gray-200 safe-area-bottom">
+  <nav class="fixed bottom-0 inset-x-0 z-40 bg-base-100 border-t border-base-300 safe-area-bottom">
     <div class="flex justify-around items-center h-16">
       <RouterLink
         v-for="item in navItems"
         :key="item.to"
         :to="item.to"
         class="flex flex-col items-center gap-0.5 text-xs font-medium transition-colors"
-        :class="$route.path.startsWith(item.to) ? 'text-indigo-600' : 'text-gray-500 hover:text-indigo-500'"
+        :class="$route.path.startsWith(item.to) ? 'text-indigo-600' : 'text-base-content/50 hover:text-indigo-500'"
       >
         <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" v-html="item.icon"></svg>
         {{ item.label }}

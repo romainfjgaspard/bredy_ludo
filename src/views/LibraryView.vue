@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-gray-50 pb-20">
+  <div class="min-h-screen bg-base-200 pb-20">
     <div class="max-w-4xl mx-auto px-3 pt-4 space-y-3">
 
       <!-- Barre de recherche + filtre -->
@@ -9,9 +9,9 @@
             v-model="filtersStore.filters.search"
             type="search"
             placeholder="Rechercher un jeu…"
-            class="w-full border rounded-xl px-3 py-2 pl-8 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-indigo-300"
+            class="w-full border rounded-xl px-3 py-2 pl-8 text-sm bg-base-100 focus:outline-none focus:ring-2 focus:ring-indigo-300"
           />
-          <svg class="absolute left-2.5 top-2.5 w-4 h-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <svg class="absolute left-2.5 top-2.5 w-4 h-4 text-base-content/40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
           </svg>
         </div>
@@ -22,40 +22,40 @@
 
       <!-- Sélecteur de mode de note -->
       <div class="flex items-center gap-2 overflow-x-auto pb-1">
-        <span class="text-xs text-gray-500 shrink-0 font-medium">Note :</span>
+        <span class="text-xs text-base-content/50 shrink-0 font-medium">Note :</span>
         <button
           v-for="opt in noteModeOptions"
           :key="opt.value"
           class="shrink-0 text-xs px-2.5 py-1 rounded-full border transition-colors"
           :class="filtersStore.noteMode === opt.value
             ? 'bg-indigo-600 text-white border-indigo-600'
-            : 'bg-white text-gray-600 border-gray-200 hover:bg-gray-50'"
+            : 'bg-base-100 text-base-content/60 border-base-300 hover:bg-base-200'"
           @click="filtersStore.noteMode = opt.value"
         >{{ opt.label }}</button>
       </div>
 
       <!-- Compteur + Loading -->
-      <div class="flex items-center justify-between text-sm text-gray-500">
+      <div class="flex items-center justify-between text-sm text-base-content/50">
         <span>{{ sortedGames.length }} jeu{{ sortedGames.length > 1 ? 'x' : '' }}</span>
       </div>
 
       <LoadingSpinner v-if="gamesStore.loading" />
 
       <template v-else>
-        <p v-if="sortedGames.length === 0" class="text-center text-gray-400 py-12">
+        <p v-if="sortedGames.length === 0" class="text-center text-base-content/40 py-12">
           Aucun jeu ne correspond aux filtres.
         </p>
 
         <!-- Tableau -->
-        <div v-else class="bg-white rounded-xl shadow overflow-hidden">
+        <div v-else class="bg-base-100 rounded-xl shadow overflow-hidden">
           <div class="overflow-x-auto">
             <table class="w-full text-sm">
               <thead>
-                <tr class="border-b border-gray-100 text-xs text-gray-500 uppercase tracking-wide">
+                <tr class="border-b border-base-200 text-xs text-base-content/50 uppercase tracking-wide">
                   <th
                     v-for="col in columns"
                     :key="col.key"
-                    class="px-3 py-3 text-left cursor-pointer select-none hover:bg-gray-50 whitespace-nowrap"
+                    class="px-3 py-3 text-left cursor-pointer select-none hover:bg-base-200 whitespace-nowrap"
                     :class="col.class"
                     @click="toggleSort(col.key)"
                   >
@@ -68,26 +68,30 @@
                 <tr
                   v-for="game in sortedGames"
                   :key="game.id"
-                  class="border-b border-gray-50 hover:bg-gray-50 cursor-pointer"
+                  class="border-b border-base-200 hover:bg-base-200 cursor-pointer"
                   @click="goToGame(game.id)"
                 >
                   <!-- Nom -->
-                  <td class="px-3 py-2.5 font-medium text-gray-900">
+                  <td class="px-3 py-2.5 font-medium text-base-content">
                     <div class="flex items-center gap-1.5">
                       <span>{{ game.nom }}</span>
                       <span v-if="game.type === 'extension'" class="text-xs bg-purple-100 text-purple-600 px-1.5 py-0.5 rounded">ext.</span>
                     </div>
                   </td>
+                  <!-- Catégorie -->
+                  <td class="px-3 py-2.5 text-base-content/50 text-xs whitespace-nowrap hidden md:table-cell">
+                    {{ game.metadata?.categories?.[0] ?? '—' }}
+                  </td>
                   <!-- Joueurs -->
-                  <td class="px-3 py-2.5 text-gray-600 whitespace-nowrap">
+                  <td class="px-3 py-2.5 text-base-content/60 whitespace-nowrap">
                     {{ game.metadata ? `${game.metadata.nb_joueurs_min}–${game.metadata.nb_joueurs_max}` : '—' }}
                   </td>
                   <!-- Durée -->
-                  <td class="px-3 py-2.5 text-gray-600 whitespace-nowrap">
+                  <td class="px-3 py-2.5 text-base-content/60 whitespace-nowrap">
                     {{ game.metadata ? `${game.metadata.duree_min}–${game.metadata.duree_max}` : '—' }}
                   </td>
                   <!-- Âge -->
-                  <td class="px-3 py-2.5 text-gray-600 whitespace-nowrap">
+                  <td class="px-3 py-2.5 text-base-content/60 whitespace-nowrap">
                     {{ game.metadata ? `${game.metadata.age_min}+` : '—' }}
                   </td>
                   <!-- Note -->
@@ -95,7 +99,7 @@
                     <NoteCell :game="game" :note-mode="filtersStore.noteMode" @saved="onNoteSaved" />
                   </td>
                   <!-- Dernière partie -->
-                  <td class="px-3 py-2.5 text-gray-400 text-xs whitespace-nowrap hidden sm:table-cell">
+                  <td class="px-3 py-2.5 text-base-content/40 text-xs whitespace-nowrap hidden sm:table-cell">
                     {{ formatLastPlay(lastPlayMap.get(game.id)) }}
                   </td>
                 </tr>
@@ -152,15 +156,16 @@ const noteModeOptions: { label: string; value: NoteMode }[] = [
 ]
 
 // ─── Tri ───────────────────────────────────────────────────────────────────
-type SortKey = 'nom' | 'players' | 'duree' | 'age' | 'note' | 'lastPlayed'
+type SortKey = 'nom' | 'players' | 'category' | 'duree' | 'age' | 'note' | 'lastPlayed'
 const sortKey = ref<SortKey>('nom')
 const sortDir = ref<'asc' | 'desc'>('asc')
 
 const columns: { key: SortKey; label: string; class?: string }[] = [
   { key: 'nom',       label: 'Jeu' },
-  { key: 'players',   label: '👥' },
-  { key: 'duree',     label: '⏱ min' },
-  { key: 'age',       label: '🎂 ans' },
+  { key: 'players',   label: '👥', class: 'hidden md:table-cell' },
+  { key: 'category',  label: 'Catégorie', class: 'hidden md:table-cell' },
+  { key: 'duree',     label: '⏱ min', class: 'hidden md:table-cell' },
+  { key: 'age',       label: '🎂 ans', class: 'hidden md:table-cell' },
   { key: 'note',      label: '★ Note' },
   { key: 'lastPlayed', label: 'Dernière partie', class: 'hidden sm:table-cell' },
 ]
@@ -180,6 +185,7 @@ const sortedGames = computed(() => {
     let va: string | number, vb: string | number
     switch (sortKey.value) {
       case 'nom':        va = a.nom; vb = b.nom; break
+      case 'category':   va = a.metadata?.categories?.[0] ?? ''; vb = b.metadata?.categories?.[0] ?? ''; break
       case 'players':    va = a.metadata?.nb_joueurs_min ?? 0; vb = b.metadata?.nb_joueurs_min ?? 0; break
       case 'duree':      va = a.metadata?.duree_min ?? 0; vb = b.metadata?.duree_min ?? 0; break
       case 'age':        va = a.metadata?.age_min ?? 0; vb = b.metadata?.age_min ?? 0; break

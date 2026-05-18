@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-gray-50 pb-20 flex flex-col">
+  <div class="min-h-screen bg-base-200 pb-20 flex flex-col">
     <!-- Barre de filtre (partagée avec bibliothèque) -->
     <div class="max-w-4xl mx-auto w-full px-3 pt-4 space-y-2">
       <div class="relative">
@@ -7,9 +7,9 @@
           v-model="filtersStore.filters.search"
           type="search"
           placeholder="Rechercher pour filtrer…"
-          class="w-full border rounded-xl px-3 py-2 pl-8 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-indigo-300"
+          class="w-full border rounded-xl px-3 py-2 pl-8 text-sm bg-base-100 focus:outline-none focus:ring-2 focus:ring-indigo-300"
         />
-        <svg class="absolute left-2.5 top-2.5 w-4 h-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <svg class="absolute left-2.5 top-2.5 w-4 h-4 text-base-content/40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
         </svg>
       </div>
@@ -42,10 +42,10 @@
             {{ isSpinning ? '🎲 En cours…' : '🎰 Tourner !' }}
           </button>
 
-          <p v-if="wheelCandidates.length === 0" class="text-sm text-gray-400 text-center">
+          <p v-if="wheelCandidates.length === 0" class="text-sm text-base-content/40 text-center">
             Cochez des jeux dans la liste ←
           </p>
-          <p v-else class="text-sm text-gray-500">
+          <p v-else class="text-sm text-base-content/50">
             {{ wheelCandidates.length }} jeu{{ wheelCandidates.length > 1 ? 'x' : '' }} dans la roue
           </p>
         </div>
@@ -62,12 +62,12 @@
         <div class="absolute inset-0 bg-black/50 backdrop-blur-sm" @click="result = null" />
 
         <!-- Card -->
-        <div class="relative z-10 bg-white rounded-3xl shadow-2xl max-w-sm w-full p-6 text-center space-y-4">
+        <div class="relative z-10 bg-base-100 rounded-3xl shadow-2xl max-w-sm w-full p-6 text-center space-y-4">
           <div class="absolute inset-x-0 top-0 h-2 rounded-t-3xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500" />
 
-          <p class="text-xs font-semibold uppercase tracking-widest text-gray-400">C'est parti !</p>
+          <p class="text-xs font-semibold uppercase tracking-widest text-base-content/40">C'est parti !</p>
 
-          <div class="w-20 h-20 mx-auto rounded-2xl overflow-hidden bg-gray-100 shadow">
+          <div class="w-20 h-20 mx-auto rounded-2xl overflow-hidden bg-base-200 shadow">
             <img
               :src="resultImgUrl"
               :alt="result.nom"
@@ -77,9 +77,9 @@
           </div>
 
           <div>
-            <h2 class="text-2xl font-extrabold text-gray-900">{{ result.nom }}</h2>
+            <h2 class="text-2xl font-extrabold text-base-content">{{ result.nom }}</h2>
             <p v-if="result.type === 'extension'" class="text-xs text-purple-600 mt-0.5">Extension</p>
-            <p v-if="result.metadata" class="text-sm text-gray-500 mt-1">
+            <p v-if="result.metadata" class="text-sm text-base-content/50 mt-1">
               {{ result.metadata.nb_joueurs_min }}–{{ result.metadata.nb_joueurs_max }} joueurs
               · {{ result.metadata.duree_min }}–{{ result.metadata.duree_max }} min
             </p>
@@ -100,14 +100,14 @@
               Voir la fiche →
             </router-link>
             <button
-              class="flex-1 py-2.5 bg-gray-100 text-gray-700 rounded-xl font-semibold text-sm hover:bg-gray-200 transition-colors"
+              class="flex-1 py-2.5 bg-base-200 text-base-content/80 rounded-xl font-semibold text-sm hover:bg-gray-200 transition-colors"
               @click="spin()"
             >
               🔄 Relancer
             </button>
           </div>
 
-          <button class="text-xs text-gray-400 hover:text-gray-600" @click="result = null">
+          <button class="text-xs text-base-content/40 hover:text-base-content/60" @click="result = null">
             Fermer
           </button>
         </div>
