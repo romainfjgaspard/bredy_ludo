@@ -23,6 +23,8 @@ export interface GameMetadata {
   bgg_link?: string
   description?: string
   tutorial_url?: string
+  /** Catégories BGG (ex: Famille, Stratégie, Coopératif…) */
+  categories?: string[]
 }
 
 export type GameType = 'base' | 'extension'

@@ -10,10 +10,28 @@
 
       <template v-else>
         <!-- StatCards -->
-        <div class="grid grid-cols-3 gap-3">
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
           <StatCard label="Jeux" :value="totalGames" color="indigo" />
           <StatCard label="Parties" :value="totalPlays" color="green" />
           <StatCard label="Oubliés" :value="forgottenCount" color="amber" />
+          <StatCard label="Notés" :value="ratedCount" color="purple" />
+        </div>
+
+        <!-- Jeux notés par membre -->
+        <div class="bg-white rounded-xl shadow p-4">
+          <h2 class="font-semibold mb-3">Notes par membre</h2>
+          <div class="space-y-2">
+            <div v-for="member in memberRatings" :key="member.profile" class="flex items-center gap-3 text-sm">
+              <span class="w-24 text-gray-600 shrink-0">{{ member.profile }}</span>
+              <div class="flex-1 bg-gray-100 rounded-full h-2">
+                <div
+                  class="bg-indigo-400 h-2 rounded-full transition-all"
+                  :style="{ width: `${totalGames > 0 ? (member.count / totalGames * 100) : 0}%` }"
+                />
+              </div>
+              <span class="text-gray-500 shrink-0 w-16 text-right">{{ member.count }}/{{ totalGames }}</span>
+            </div>
+          </div>
         </div>
 
         <!-- Top jeux joués -->
@@ -52,6 +70,7 @@ import { ref, computed, onMounted } from 'vue'
 import { useGamesStore } from '@/stores/gamesStore'
 import { usePlaysStore } from '@/stores/playsStore'
 import { isForgotten } from '@/utils/dateUtils'
+import { PROFILES } from '@/domain/Profile'
 import LoadingSpinner from '@/components/common/LoadingSpinner.vue'
 import RefreshButton from '@/components/common/RefreshButton.vue'
 import StatCard from '@/components/stats/StatCard.vue'
@@ -85,6 +104,22 @@ const forgottenGames = computed(() =>
   })
 )
 const forgottenCount = computed(() => forgottenGames.value.length)
+
+/** Jeux ayant au moins une note */
+const ratedCount = computed(() =>
+  gamesStore.activeGames.filter(g => {
+    const r = g.ratings
+    return r && Object.values(r).some(v => typeof v?.value === 'number')
+  }).length
+)
+
+/** Notes par membre */
+const memberRatings = computed(() =>
+  PROFILES.map(profile => ({
+    profile,
+    count: gamesStore.activeGames.filter(g => typeof g.ratings?.[profile]?.value === 'number').length,
+  }))
+)
 
 const topGames = computed(() => {
   const counts = new Map<string, { name: string; count: number }>()
