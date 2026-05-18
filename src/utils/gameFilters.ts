@@ -29,12 +29,11 @@ export function filterByDuration(games: Game[], min: number | null, max: number 
   })
 }
 
-/** ageMin = seuil bas de l'âge du jeu ; ageMax = seuil haut */
-export function filterByAge(games: Game[], ageMin: number | null, ageMax: number | null): Game[] {
+/** ageMin = âge minimum requis du jeu (age_min >= ageMin) */
+export function filterByAge(games: Game[], ageMin: number | null): Game[] {
   return games.filter(g => {
     const gAge = g.metadata?.age_min ?? 0
     if (ageMin !== null && gAge < ageMin) return false
-    if (ageMax !== null && gAge > ageMax) return false
     return true
   })
 }
@@ -86,7 +85,7 @@ export function applyAllFilters(
   result = filterBySearch(result, filters.search)
   result = filterByPlayers(result, filters.players)
   result = filterByDuration(result, filters.durationMin, filters.durationMax)
-  result = filterByAge(result, filters.ageMin, filters.ageMax)
+  result = filterByAge(result, filters.ageMin)
   result = filterByMinRating(result, filters.minRating)
   result = filterByCategory(result, filters.category)
   if (lastPlayMap) result = filterByLastPlayed(result, filters.lastPlayedFilter, lastPlayMap)

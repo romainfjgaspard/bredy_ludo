@@ -6,10 +6,8 @@ export interface GameFilters {
   players: number | null
   durationMin: number | null
   durationMax: number | null
-  /** Âge minimum du jeu (age_min >= ageMin) */
+  /** Âge minimum requis du jeu (age_min >= ageMin) */
   ageMin: number | null
-  /** Âge maximum du jeu (age_min <= ageMax) */
-  ageMax: number | null
   /** Note famille minimale */
   minRating: number | null
   /** Catégorie BGG */
@@ -26,7 +24,6 @@ export function defaultFilters(): GameFilters {
     durationMin: null,
     durationMax: null,
     ageMin: null,
-    ageMax: null,
     minRating: null,
     category: null,
     lastPlayedFilter: null,

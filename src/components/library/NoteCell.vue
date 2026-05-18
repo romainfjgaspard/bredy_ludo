@@ -8,32 +8,31 @@
       <span v-else class="text-gray-300 text-xs">—</span>
     </template>
 
-    <!-- Mode membre : éditable si admin -->
+    <!-- Mode membre : étoiles toujours cliquables (redirect login si pas admin) -->
     <template v-else>
       <button
         v-for="star in 5"
         :key="star"
+        type="button"
         class="text-base leading-none transition-colors"
         :class="[
-          pending && pendingStar === star ? 'opacity-50' : '',
+          pending && pendingStar === star ? 'opacity-50 cursor-wait' : 'cursor-pointer',
           hovered >= star || (hovered === 0 && (note ?? 0) >= star)
             ? 'text-amber-400'
             : 'text-gray-200 hover:text-amber-300',
         ]"
-        :disabled="!authStore.isAdmin || pending"
-        @mouseenter="authStore.isAdmin ? hovered = star : null"
+        :disabled="pending"
+        @mouseenter="hovered = star"
         @mouseleave="hovered = 0"
         @click="handleClick(star)"
       >★</button>
-      <span v-if="!authStore.isAdmin" class="text-gray-300 text-xs ml-1">
-        {{ note !== null ? '★'.repeat(note) : '—' }}
-      </span>
     </template>
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref, computed } from 'vue'
+import { useRouter } from 'vue-router'
 import { useAuthStore } from '@/stores/authStore'
 import { updateRating } from '@/services/gamesService'
 import { useGamesStore } from '@/stores/gamesStore'
@@ -47,8 +46,9 @@ const props = defineProps<{
   noteMode: NoteMode
 }>()
 
-const emit = defineEmits<{ saved: [] }>()
+const emit = defineEmits<{ saved: []; loginRequired: [] }>()
 
+const router = useRouter()
 const authStore = useAuthStore()
 const gamesStore = useGamesStore()
 
@@ -64,7 +64,11 @@ const note = computed<number | null>(() => {
 })
 
 async function handleClick(star: number) {
-  if (!authStore.isAdmin) return
+  if (!authStore.isAdmin) {
+    emit('loginRequired')
+    router.push('/login')
+    return
+  }
   const profile = props.noteMode as typeof PROFILES[number]
   if (!PROFILES.includes(profile)) return
   pending.value = true

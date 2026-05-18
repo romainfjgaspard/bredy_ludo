@@ -58,14 +58,9 @@
 
         <!-- Âge -->
         <div>
-          <label class="text-xs text-gray-500 mb-1 block font-medium">Âge requis (ans)</label>
-          <div class="flex gap-2 items-center">
-            <input v-model.number="filters.ageMin" type="number" min="0" max="99" placeholder="Min"
-              class="w-20 border rounded-lg px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-300" />
-            <span class="text-gray-400">–</span>
-            <input v-model.number="filters.ageMax" type="number" min="0" max="99" placeholder="Max"
-              class="w-20 border rounded-lg px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-300" />
-          </div>
+          <label class="text-xs text-gray-500 mb-1 block font-medium">Âge minimum requis (ans)</label>
+          <input v-model.number="filters.ageMin" type="number" min="0" max="99" placeholder="Ex: 8"
+            class="w-28 border rounded-lg px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-300" />
         </div>
 
         <!-- Note minimale -->
@@ -159,7 +154,7 @@ const activeCount = computed(() => {
   let n = 0
   if (f.players !== null) n++
   if (f.durationMin !== null || f.durationMax !== null) n++
-  if (f.ageMin !== null || f.ageMax !== null) n++
+  if (f.ageMin !== null) n++
   if (f.minRating !== null) n++
   if (f.category !== null) n++
   if (f.lastPlayedFilter !== null) n++

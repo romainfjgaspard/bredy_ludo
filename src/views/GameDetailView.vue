@@ -100,8 +100,9 @@
             <!-- Notes par profil -->
             <div>
               <h2 class="font-semibold mb-2">Notes</h2>
-              <div v-if="!authStore.isAdmin" class="mb-2 text-xs text-gray-400">
-                <router-link to="/login" class="text-indigo-500 hover:underline">Connectez-vous</router-link> pour noter
+              <div v-if="!authStore.isAdmin" class="mb-2 text-xs text-amber-600 bg-amber-50 rounded-lg px-3 py-2 flex items-center gap-2">
+                <svg class="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>
+                <router-link to="/login" class="hover:underline font-medium">Se connecter pour noter</router-link>
               </div>
               <div class="space-y-2">
                 <div v-for="profile in PROFILES" :key="profile" class="flex items-center justify-between">
@@ -109,7 +110,7 @@
                   <StarRating
                     :model-value="game.ratings?.[profile]?.value ?? null"
                     :readonly="!authStore.isAdmin"
-                    @update:model-value="saveRating(profile, $event)"
+                    @click="handleStarClick(profile, $event)"
                   />
                 </div>
               </div>
@@ -180,7 +181,7 @@
 
 <script setup lang="ts">
 import { ref, computed, onMounted } from 'vue'
-import { useRoute } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 import { Timestamp } from 'firebase/firestore'
 import { useGamesStore } from '@/stores/gamesStore'
 import { useAuthStore } from '@/stores/authStore'
@@ -198,6 +199,7 @@ import AppNav from '@/components/layout/AppNav.vue'
 import { imageUrl } from '@/utils/imageUrl'
 
 const route = useRoute()
+const router = useRouter()
 const gamesStore = useGamesStore()
 const authStore = useAuthStore()
 const playsStore = usePlaysStore()
@@ -241,6 +243,15 @@ async function saveRating(profile: Profile, value: number | null) {
     toastMsg.value = 'Erreur lors de la sauvegarde'
     toastType.value = 'error'
   }
+}
+
+async function handleStarClick(profile: Profile, star: number) {
+  if (!authStore.isAdmin) {
+    router.push('/login')
+    return
+  }
+  const current = game.value?.ratings?.[profile]?.value ?? null
+  await saveRating(profile, current === star ? null : star)
 }
 
 async function submitPlay() {

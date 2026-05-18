@@ -1,2 +1,2 @@
-export const PROFILES = ['Nicolas', 'Valérie', 'Romane', 'Erin', 'Agathe'] as const
+export const PROFILES = ['Nicolas', 'Valérie', 'Erin', 'Romane', 'Agathe'] as const
 export type Profile = typeof PROFILES[number]

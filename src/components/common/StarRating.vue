@@ -4,13 +4,14 @@
       v-for="star in 5"
       :key="star"
       type="button"
-      :disabled="readonly"
       :class="[
-        'text-2xl transition-colors',
-        star <= (modelValue ?? 0) ? 'text-yellow-400' : 'text-gray-300',
-        !readonly ? 'hover:text-yellow-300 cursor-pointer' : 'cursor-default',
+        'text-2xl transition-colors cursor-pointer',
+        star <= (hovered || modelValue || 0) ? 'text-yellow-400' : 'text-gray-300',
+        !readonly ? 'hover:text-yellow-300' : '',
       ]"
-      @click="!readonly && emit('update:modelValue', star === modelValue ? null : star)"
+      @mouseenter="!readonly && (hovered = star)"
+      @mouseleave="hovered = 0"
+      @click="emit('click', star)"
     >
       ★
     </button>
@@ -18,11 +19,14 @@
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue'
 defineProps<{
   modelValue: number | null
   readonly?: boolean
 }>()
 const emit = defineEmits<{
   'update:modelValue': [value: number | null]
+  'click': [star: number]
 }>()
+const hovered = ref(0)
 </script>
