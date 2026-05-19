@@ -21,8 +21,7 @@
       <FilterPanel />
 
       <!-- Sélecteur de mode de note -->
-      <div class="flex items-center gap-2 overflow-x-auto pb-1">
-        <span class="text-xs text-base-content/50 shrink-0 font-medium">Note :</span>
+      <div class="flex items-center gap-2 overflow-x-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
         <button
           v-for="opt in noteModeOptions"
           :key="opt.value"
@@ -49,14 +48,13 @@
         <!-- Tableau -->
         <div v-else class="bg-base-100 rounded-xl shadow overflow-hidden">
           <div class="overflow-x-auto">
-            <table class="w-full text-sm">
+            <table class="min-w-max w-full text-sm">
               <thead>
                 <tr class="border-b border-base-200 text-xs text-base-content/50 uppercase tracking-wide">
                   <th
                     v-for="col in columns"
                     :key="col.key"
                     class="px-3 py-3 text-left cursor-pointer select-none hover:bg-base-200 whitespace-nowrap"
-                    :class="col.class"
                     @click="toggleSort(col.key)"
                   >
                     {{ col.label }}
@@ -79,19 +77,19 @@
                     </div>
                   </td>
                   <!-- Catégorie -->
-                  <td class="px-3 py-2.5 text-base-content/50 text-xs whitespace-nowrap hidden md:table-cell">
+                  <td class="px-3 py-2.5 text-base-content/50 text-xs whitespace-nowrap">
                     {{ game.metadata?.categories?.[0] ?? '—' }}
                   </td>
                   <!-- Joueurs -->
-                  <td class="px-3 py-2.5 text-base-content/60 whitespace-nowrap hidden md:table-cell">
+                  <td class="px-3 py-2.5 text-base-content/60 whitespace-nowrap">
                     {{ game.metadata ? `${game.metadata.nb_joueurs_min}–${game.metadata.nb_joueurs_max}` : '—' }}
                   </td>
                   <!-- Durée -->
-                  <td class="px-3 py-2.5 text-base-content/60 whitespace-nowrap hidden md:table-cell">
+                  <td class="px-3 py-2.5 text-base-content/60 whitespace-nowrap">
                     {{ game.metadata ? `${game.metadata.duree_min}–${game.metadata.duree_max}` : '—' }}
                   </td>
                   <!-- Âge -->
-                  <td class="px-3 py-2.5 text-base-content/60 whitespace-nowrap hidden md:table-cell">
+                  <td class="px-3 py-2.5 text-base-content/60 whitespace-nowrap">
                     {{ game.metadata ? `${game.metadata.age_min}+` : '—' }}
                   </td>
                   <!-- Note -->
@@ -99,7 +97,7 @@
                     <NoteCell :game="game" :note-mode="filtersStore.noteMode" @saved="onNoteSaved" />
                   </td>
                   <!-- Dernière partie -->
-                  <td class="px-3 py-2.5 text-base-content/40 text-xs whitespace-nowrap hidden sm:table-cell">
+                  <td class="px-3 py-2.5 text-base-content/40 text-xs whitespace-nowrap">
                     {{ formatLastPlay(lastPlayMap.get(game.id)) }}
                   </td>
                 </tr>
@@ -160,14 +158,14 @@ type SortKey = 'nom' | 'players' | 'category' | 'duree' | 'age' | 'note' | 'last
 const sortKey = ref<SortKey>('nom')
 const sortDir = ref<'asc' | 'desc'>('asc')
 
-const columns: { key: SortKey; label: string; class?: string }[] = [
-  { key: 'nom',       label: 'Jeu' },
-  { key: 'category',  label: 'Catégorie', class: 'hidden md:table-cell' },
-  { key: 'players',   label: '👥', class: 'hidden md:table-cell' },
-  { key: 'duree',     label: '⏱ min', class: 'hidden md:table-cell' },
-  { key: 'age',       label: '🎂 ans', class: 'hidden md:table-cell' },
-  { key: 'note',      label: '★ Note' },
-  { key: 'lastPlayed', label: 'Dernière partie', class: 'hidden sm:table-cell' },
+const columns: { key: SortKey; label: string }[] = [
+  { key: 'nom',        label: 'Jeu' },
+  { key: 'category',   label: 'Catégorie' },
+  { key: 'players',    label: '👥' },
+  { key: 'duree',      label: '⏱ min' },
+  { key: 'age',        label: '🎂 ans' },
+  { key: 'note',       label: '★ Note' },
+  { key: 'lastPlayed', label: 'Dernière partie' },
 ]
 
 function getNote(game: Game): number | null {
