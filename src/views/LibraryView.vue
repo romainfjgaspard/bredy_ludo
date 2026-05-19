@@ -83,15 +83,15 @@
                     {{ game.metadata?.categories?.[0] ?? '—' }}
                   </td>
                   <!-- Joueurs -->
-                  <td class="px-3 py-2.5 text-base-content/60 whitespace-nowrap">
+                  <td class="px-3 py-2.5 text-base-content/60 whitespace-nowrap hidden md:table-cell">
                     {{ game.metadata ? `${game.metadata.nb_joueurs_min}–${game.metadata.nb_joueurs_max}` : '—' }}
                   </td>
                   <!-- Durée -->
-                  <td class="px-3 py-2.5 text-base-content/60 whitespace-nowrap">
+                  <td class="px-3 py-2.5 text-base-content/60 whitespace-nowrap hidden md:table-cell">
                     {{ game.metadata ? `${game.metadata.duree_min}–${game.metadata.duree_max}` : '—' }}
                   </td>
                   <!-- Âge -->
-                  <td class="px-3 py-2.5 text-base-content/60 whitespace-nowrap">
+                  <td class="px-3 py-2.5 text-base-content/60 whitespace-nowrap hidden md:table-cell">
                     {{ game.metadata ? `${game.metadata.age_min}+` : '—' }}
                   </td>
                   <!-- Note -->
