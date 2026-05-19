@@ -49,6 +49,7 @@ async function main() {
         community_min_age: d.communityMinAge,
         bgg_link: d.bggLink ?? (d.id ? `https://boardgamegeek.com/boardgame/${d.id}` : undefined),
         description: d.description,
+        categories: d.categories?.length ? d.categories : undefined,
       },
       createdAt: Timestamp.now(),
       updatedAt: Timestamp.now(),

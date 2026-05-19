@@ -48,6 +48,7 @@ interface BggDetails {
   thumbnail?: string
   image?: string
   description?: string
+  categories?: string[]
 }
 
 interface Cache {
@@ -267,6 +268,13 @@ async function fetchDetails(client: AxiosInstance, bggId: number): Promise<BggDe
     thumbnail: item.thumbnail,
     image: item.image,
     description: typeof item.description === 'string' ? item.description.substring(0, 500) : undefined,
+    categories: (() => {
+      const links = Array.isArray(item.link) ? item.link : (item.link ? [item.link] : [])
+      return links
+        .filter((l: any) => l['@_type'] === 'boardgamecategory')
+        .map((l: any) => l['@_value'] as string)
+        .slice(0, 3)
+    })(),
   }
 }
 

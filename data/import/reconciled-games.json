@@ -28,7 +28,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900000",
-        "description": "Fiche de test générée automatiquement pour concept kids animaux."
+        "description": "Fiche de test générée automatiquement pour concept kids animaux.",
+        "categories": [
+          "Coopératif",
+          "Stratégie"
+        ]
       }
     },
     {
@@ -58,7 +62,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900001",
-        "description": "Fiche de test générée automatiquement pour little mine."
+        "description": "Fiche de test générée automatiquement pour little mine.",
+        "categories": [
+          "Stratégie",
+          "Coopératif"
+        ]
       }
     },
     {
@@ -88,7 +96,10 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900002",
-        "description": "Fiche de test générée automatiquement pour mikado."
+        "description": "Fiche de test générée automatiquement pour mikado.",
+        "categories": [
+          "Stratégie"
+        ]
       }
     },
     {
@@ -118,7 +129,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900003",
-        "description": "Fiche de test générée automatiquement pour au feu les pompies."
+        "description": "Fiche de test générée automatiquement pour au feu les pompies.",
+        "categories": [
+          "Famille",
+          "Coopératif"
+        ]
       }
     },
     {
@@ -148,7 +163,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900004",
-        "description": "Fiche de test générée automatiquement pour tresor de glace."
+        "description": "Fiche de test générée automatiquement pour tresor de glace.",
+        "categories": [
+          "Famille",
+          "Stratégie"
+        ]
       }
     },
     {
@@ -178,7 +197,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900005",
-        "description": "Fiche de test générée automatiquement pour farmini."
+        "description": "Fiche de test générée automatiquement pour farmini.",
+        "categories": [
+          "Famille",
+          "Coopératif"
+        ]
       }
     },
     {
@@ -208,7 +231,10 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900006",
-        "description": "Fiche de test générée automatiquement pour le mistigrouille de cornebidouille."
+        "description": "Fiche de test générée automatiquement pour le mistigrouille de cornebidouille.",
+        "categories": [
+          "Stratégie"
+        ]
       }
     },
     {
@@ -238,7 +264,10 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900007",
-        "description": "Fiche de test générée automatiquement pour yams junior."
+        "description": "Fiche de test générée automatiquement pour yams junior.",
+        "categories": [
+          "Coopératif"
+        ]
       }
     },
     {
@@ -268,7 +297,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900008",
-        "description": "Fiche de test générée automatiquement pour bataille navaie magnetique."
+        "description": "Fiche de test générée automatiquement pour bataille navaie magnetique.",
+        "categories": [
+          "Coopératif",
+          "Stratégie"
+        ]
       }
     },
     {
@@ -298,7 +331,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900009",
-        "description": "Fiche de test générée automatiquement pour fabulia."
+        "description": "Fiche de test générée automatiquement pour fabulia.",
+        "categories": [
+          "Party",
+          "Coopératif"
+        ]
       }
     },
     {
@@ -328,7 +365,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900010",
-        "description": "Fiche de test générée automatiquement pour le monstre des couleurs."
+        "description": "Fiche de test générée automatiquement pour le monstre des couleurs.",
+        "categories": [
+          "Party",
+          "Stratégie"
+        ]
       }
     },
     {
@@ -358,7 +399,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900011",
-        "description": "Fiche de test générée automatiquement pour minimatch."
+        "description": "Fiche de test générée automatiquement pour minimatch.",
+        "categories": [
+          "Party",
+          "Coopératif"
+        ]
       }
     },
     {
@@ -388,7 +433,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900012",
-        "description": "Fiche de test générée automatiquement pour timeline il était une fois l'homme."
+        "description": "Fiche de test générée automatiquement pour timeline il était une fois l'homme.",
+        "categories": [
+          "Coopératif",
+          "Stratégie"
+        ]
       }
     },
     {
@@ -418,7 +467,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900013",
-        "description": "Fiche de test générée automatiquement pour cocotaki."
+        "description": "Fiche de test générée automatiquement pour cocotaki.",
+        "categories": [
+          "Stratégie",
+          "Coopératif"
+        ]
       }
     },
     {
@@ -448,7 +501,10 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900014",
-        "description": "Fiche de test générée automatiquement pour kinoko."
+        "description": "Fiche de test générée automatiquement pour kinoko.",
+        "categories": [
+          "Stratégie"
+        ]
       }
     },
     {
@@ -478,7 +534,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900015",
-        "description": "Fiche de test générée automatiquement pour tous a la ferme."
+        "description": "Fiche de test générée automatiquement pour tous a la ferme.",
+        "categories": [
+          "Famille",
+          "Stratégie"
+        ]
       }
     },
     {
@@ -508,7 +568,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900016",
-        "description": "Fiche de test générée automatiquement pour cache quatre."
+        "description": "Fiche de test générée automatiquement pour cache quatre.",
+        "categories": [
+          "Famille",
+          "Coopératif"
+        ]
       }
     },
     {
@@ -538,7 +602,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900017",
-        "description": "Fiche de test générée automatiquement pour Bazar Bizarre."
+        "description": "Fiche de test générée automatiquement pour Bazar Bizarre.",
+        "categories": [
+          "Famille",
+          "Stratégie"
+        ]
       }
     },
     {
@@ -568,7 +636,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900018",
-        "description": "Fiche de test générée automatiquement pour diamoniak."
+        "description": "Fiche de test générée automatiquement pour diamoniak.",
+        "categories": [
+          "Stratégie",
+          "Coopératif"
+        ]
       }
     },
     {
@@ -598,7 +670,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900019",
-        "description": "Fiche de test générée automatiquement pour little observation."
+        "description": "Fiche de test générée automatiquement pour little observation.",
+        "categories": [
+          "Coopératif",
+          "Stratégie"
+        ]
       }
     },
     {
@@ -628,7 +704,10 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900020",
-        "description": "Fiche de test générée automatiquement pour sos ouistiti."
+        "description": "Fiche de test générée automatiquement pour sos ouistiti.",
+        "categories": [
+          "Coopératif"
+        ]
       }
     },
     {
@@ -658,7 +737,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900021",
-        "description": "Fiche de test générée automatiquement pour attrape reve."
+        "description": "Fiche de test générée automatiquement pour attrape reve.",
+        "categories": [
+          "Party",
+          "Stratégie"
+        ]
       }
     },
     {
@@ -688,7 +771,11 @@
         "communityBestPlayers": 4,
         "communityMinAge": 5,
         "bggLink": "https://boardgamegeek.com/boardgame/179504",
-        "description": "Fiche de test générée automatiquement pour rhino hero."
+        "description": "Fiche de test générée automatiquement pour rhino hero.",
+        "categories": [
+          "Famille",
+          "Adresse"
+        ]
       }
     },
     {
@@ -718,7 +805,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900023",
-        "description": "Fiche de test générée automatiquement pour abella l'abeille."
+        "description": "Fiche de test générée automatiquement pour abella l'abeille.",
+        "categories": [
+          "Party",
+          "Stratégie"
+        ]
       }
     },
     {
@@ -748,7 +839,10 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900024",
-        "description": "Fiche de test générée automatiquement pour misitigri mon premier jeu."
+        "description": "Fiche de test générée automatiquement pour misitigri mon premier jeu.",
+        "categories": [
+          "Coopératif"
+        ]
       }
     },
     {
@@ -778,7 +872,10 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900025",
-        "description": "Fiche de test générée automatiquement pour times'up kids."
+        "description": "Fiche de test générée automatiquement pour times'up kids.",
+        "categories": [
+          "Stratégie"
+        ]
       }
     },
     {
@@ -808,7 +905,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900026",
-        "description": "Fiche de test générée automatiquement pour licorne dans les nuages."
+        "description": "Fiche de test générée automatiquement pour licorne dans les nuages.",
+        "categories": [
+          "Stratégie",
+          "Coopératif"
+        ]
       }
     },
     {
@@ -838,7 +939,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900027",
-        "description": "Fiche de test générée automatiquement pour ballons."
+        "description": "Fiche de test générée automatiquement pour ballons.",
+        "categories": [
+          "Famille",
+          "Stratégie"
+        ]
       }
     },
     {
@@ -868,7 +973,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900028",
-        "description": "Fiche de test générée automatiquement pour Little Coopération."
+        "description": "Fiche de test générée automatiquement pour Little Coopération.",
+        "categories": [
+          "Famille",
+          "Coopératif"
+        ]
       }
     },
     {
@@ -898,7 +1007,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900029",
-        "description": "Fiche de test générée automatiquement pour la course des tortues."
+        "description": "Fiche de test générée automatiquement pour la course des tortues.",
+        "categories": [
+          "Stratégie",
+          "Famille"
+        ]
       }
     },
     {
@@ -928,7 +1041,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900030",
-        "description": "Fiche de test générée automatiquement pour le mega quiz pourquoi comment."
+        "description": "Fiche de test générée automatiquement pour le mega quiz pourquoi comment.",
+        "categories": [
+          "Stratégie",
+          "Party"
+        ]
       }
     },
     {
@@ -958,7 +1075,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900031",
-        "description": "Fiche de test générée automatiquement pour pouet pouet!."
+        "description": "Fiche de test générée automatiquement pour pouet pouet!.",
+        "categories": [
+          "Coopératif",
+          "Famille"
+        ]
       }
     },
     {
@@ -988,7 +1109,10 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900032",
-        "description": "Fiche de test générée automatiquement pour une cuillere pour martin."
+        "description": "Fiche de test générée automatiquement pour une cuillere pour martin.",
+        "categories": [
+          "Party"
+        ]
       }
     },
     {
@@ -1018,7 +1142,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900033",
-        "description": "Fiche de test générée automatiquement pour tangram."
+        "description": "Fiche de test générée automatiquement pour tangram.",
+        "categories": [
+          "Party",
+          "Famille"
+        ]
       }
     },
     {
@@ -1048,7 +1176,10 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900034",
-        "description": "Fiche de test générée automatiquement pour licorne dans les nuages bienvenue a rosalie."
+        "description": "Fiche de test générée automatiquement pour licorne dans les nuages bienvenue a rosalie.",
+        "categories": [
+          "Party"
+        ]
       }
     },
     {
@@ -1078,7 +1209,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900035",
-        "description": "Fiche de test générée automatiquement pour loto de la ferme."
+        "description": "Fiche de test générée automatiquement pour loto de la ferme.",
+        "categories": [
+          "Coopératif",
+          "Famille"
+        ]
       }
     },
     {
@@ -1108,7 +1243,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900036",
-        "description": "Fiche de test générée automatiquement pour les petites souris."
+        "description": "Fiche de test générée automatiquement pour les petites souris.",
+        "categories": [
+          "Coopératif",
+          "Party"
+        ]
       }
     },
     {
@@ -1138,7 +1277,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900037",
-        "description": "Fiche de test générée automatiquement pour memo des feuilles."
+        "description": "Fiche de test générée automatiquement pour memo des feuilles.",
+        "categories": [
+          "Stratégie",
+          "Famille"
+        ]
       }
     },
     {
@@ -1168,7 +1311,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900038",
-        "description": "Fiche de test générée automatiquement pour Bazar Bizarre 2.0."
+        "description": "Fiche de test générée automatiquement pour Bazar Bizarre 2.0.",
+        "categories": [
+          "Famille",
+          "Party"
+        ]
       }
     },
     {
@@ -1198,7 +1345,10 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900039",
-        "description": "Fiche de test générée automatiquement pour domino."
+        "description": "Fiche de test générée automatiquement pour domino.",
+        "categories": [
+          "Famille"
+        ]
       }
     },
     {
@@ -1228,7 +1378,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900040",
-        "description": "Fiche de test générée automatiquement pour sos dino."
+        "description": "Fiche de test générée automatiquement pour sos dino.",
+        "categories": [
+          "Famille",
+          "Party"
+        ]
       }
     },
     {
@@ -1258,7 +1412,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900041",
-        "description": "Fiche de test générée automatiquement pour saute petit poney."
+        "description": "Fiche de test générée automatiquement pour saute petit poney.",
+        "categories": [
+          "Stratégie",
+          "Famille"
+        ]
       }
     },
     {
@@ -1288,7 +1446,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900042",
-        "description": "Fiche de test générée automatiquement pour kracken attaque."
+        "description": "Fiche de test générée automatiquement pour kracken attaque.",
+        "categories": [
+          "Stratégie",
+          "Party"
+        ]
       }
     },
     {
@@ -1318,7 +1480,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900043",
-        "description": "Fiche de test générée automatiquement pour il était une fois l'europe."
+        "description": "Fiche de test générée automatiquement pour il était une fois l'europe.",
+        "categories": [
+          "Coopératif",
+          "Famille"
+        ]
       }
     },
     {
@@ -1348,7 +1514,10 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900044",
-        "description": "Fiche de test générée automatiquement pour apero devinette en famille."
+        "description": "Fiche de test générée automatiquement pour apero devinette en famille.",
+        "categories": [
+          "Party"
+        ]
       }
     },
     {
@@ -1378,7 +1547,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900045",
-        "description": "Fiche de test générée automatiquement pour apero mystere et enigme."
+        "description": "Fiche de test générée automatiquement pour apero mystere et enigme.",
+        "categories": [
+          "Party",
+          "Famille"
+        ]
       }
     },
     {
@@ -1408,7 +1581,10 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900046",
-        "description": "Fiche de test générée automatiquement pour les apero carte special enigme logique."
+        "description": "Fiche de test générée automatiquement pour les apero carte special enigme logique.",
+        "categories": [
+          "Party"
+        ]
       }
     },
     {
@@ -1438,7 +1614,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900047",
-        "description": "Fiche de test générée automatiquement pour echec."
+        "description": "Fiche de test générée automatiquement pour echec.",
+        "categories": [
+          "Coopératif",
+          "Famille"
+        ]
       }
     },
     {
@@ -1468,7 +1648,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900048",
-        "description": "Fiche de test générée automatiquement pour deblok."
+        "description": "Fiche de test générée automatiquement pour deblok.",
+        "categories": [
+          "Coopératif",
+          "Party"
+        ]
       }
     },
     {
@@ -1498,7 +1682,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900049",
-        "description": "Fiche de test générée automatiquement pour enigme monde animal."
+        "description": "Fiche de test générée automatiquement pour enigme monde animal.",
+        "categories": [
+          "Stratégie",
+          "Famille"
+        ]
       }
     },
     {
@@ -1528,7 +1716,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900050",
-        "description": "Fiche de test générée automatiquement pour kiproko."
+        "description": "Fiche de test générée automatiquement pour kiproko.",
+        "categories": [
+          "Famille",
+          "Party"
+        ]
       }
     },
     {
@@ -1558,7 +1750,10 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900051",
-        "description": "Fiche de test générée automatiquement pour Gagne Ton Papa !."
+        "description": "Fiche de test générée automatiquement pour Gagne Ton Papa !.",
+        "categories": [
+          "Famille"
+        ]
       }
     },
     {
@@ -1588,7 +1783,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900052",
-        "description": "Fiche de test générée automatiquement pour La Planche des Pirates."
+        "description": "Fiche de test générée automatiquement pour La Planche des Pirates.",
+        "categories": [
+          "Famille",
+          "Party"
+        ]
       }
     },
     {
@@ -1618,7 +1817,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900053",
-        "description": "Fiche de test générée automatiquement pour stickers."
+        "description": "Fiche de test générée automatiquement pour stickers.",
+        "categories": [
+          "Stratégie",
+          "Famille"
+        ]
       }
     },
     {
@@ -1648,7 +1851,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900054",
-        "description": "Fiche de test générée automatiquement pour mon coffret d'enquete autouru du monde."
+        "description": "Fiche de test générée automatiquement pour mon coffret d'enquete autouru du monde.",
+        "categories": [
+          "Stratégie",
+          "Party"
+        ]
       }
     },
     {
@@ -1678,7 +1885,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900055",
-        "description": "Fiche de test générée automatiquement pour artist'ik."
+        "description": "Fiche de test générée automatiquement pour artist'ik.",
+        "categories": [
+          "Coopératif",
+          "Famille"
+        ]
       }
     },
     {
@@ -1708,7 +1919,10 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900056",
-        "description": "Fiche de test générée automatiquement pour dodo."
+        "description": "Fiche de test générée automatiquement pour dodo.",
+        "categories": [
+          "Party"
+        ]
       }
     },
     {
@@ -1738,7 +1952,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900057",
-        "description": "Fiche de test générée automatiquement pour pique plume."
+        "description": "Fiche de test générée automatiquement pour pique plume.",
+        "categories": [
+          "Party",
+          "Famille"
+        ]
       }
     },
     {
@@ -1768,7 +1986,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900058",
-        "description": "Fiche de test générée automatiquement pour le jeu du prince de motordu."
+        "description": "Fiche de test générée automatiquement pour le jeu du prince de motordu.",
+        "categories": [
+          "Party",
+          "Coopératif"
+        ]
       }
     },
     {
@@ -1798,7 +2020,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900059",
-        "description": "Fiche de test générée automatiquement pour Le Roi Sommeil."
+        "description": "Fiche de test générée automatiquement pour Le Roi Sommeil.",
+        "categories": [
+          "Coopératif",
+          "Stratégie"
+        ]
       }
     },
     {
@@ -1828,7 +2054,10 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900060",
-        "description": "Fiche de test générée automatiquement pour La Maison des Souris."
+        "description": "Fiche de test générée automatiquement pour La Maison des Souris.",
+        "categories": [
+          "Coopératif"
+        ]
       }
     },
     {
@@ -1858,7 +2087,10 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900061",
-        "description": "Fiche de test générée automatiquement pour quiz famille."
+        "description": "Fiche de test générée automatiquement pour quiz famille.",
+        "categories": [
+          "Stratégie"
+        ]
       }
     },
     {
@@ -1888,7 +2120,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900062",
-        "description": "Fiche de test générée automatiquement pour times'up."
+        "description": "Fiche de test générée automatiquement pour times'up.",
+        "categories": [
+          "Famille",
+          "Coopératif"
+        ]
       }
     },
     {
@@ -1918,7 +2154,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 7,
         "bggLink": "https://boardgamegeek.com/boardgame/2411",
-        "description": "Fiche de test générée automatiquement pour Labyrinthe."
+        "description": "Fiche de test générée automatiquement pour Labyrinthe.",
+        "categories": [
+          "Famille",
+          "Course"
+        ]
       }
     },
     {
@@ -1948,7 +2188,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 8,
         "bggLink": "https://boardgamegeek.com/boardgame/70919",
-        "description": "Fiche de test générée automatiquement pour takenoko."
+        "description": "Fiche de test générée automatiquement pour takenoko.",
+        "categories": [
+          "Famille",
+          "Pose de tuiles"
+        ]
       }
     },
     {
@@ -1978,7 +2222,10 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900065",
-        "description": "Fiche de test générée automatiquement pour captain flip."
+        "description": "Fiche de test générée automatiquement pour captain flip.",
+        "categories": [
+          "Stratégie"
+        ]
       }
     },
     {
@@ -2008,7 +2255,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 10,
         "bggLink": "https://boardgamegeek.com/boardgame/148228",
-        "description": "Fiche de test générée automatiquement pour Splendor."
+        "description": "Fiche de test générée automatiquement pour Splendor.",
+        "categories": [
+          "Stratégie",
+          "Cartes"
+        ]
       }
     },
     {
@@ -2038,7 +2289,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900067",
-        "description": "Fiche de test générée automatiquement pour operation cookies."
+        "description": "Fiche de test générée automatiquement pour operation cookies.",
+        "categories": [
+          "Coopératif",
+          "Stratégie"
+        ]
       }
     },
     {
@@ -2068,7 +2323,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900068",
-        "description": "Fiche de test générée automatiquement pour flashback zombie kidz."
+        "description": "Fiche de test générée automatiquement pour flashback zombie kidz.",
+        "categories": [
+          "Party",
+          "Coopératif"
+        ]
       }
     },
     {
@@ -2098,7 +2357,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900069",
-        "description": "Fiche de test générée automatiquement pour detective charlie."
+        "description": "Fiche de test générée automatiquement pour detective charlie.",
+        "categories": [
+          "Party",
+          "Stratégie"
+        ]
       }
     },
     {
@@ -2128,7 +2391,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900070",
-        "description": "Fiche de test générée automatiquement pour defie tes parents."
+        "description": "Fiche de test générée automatiquement pour defie tes parents.",
+        "categories": [
+          "Party",
+          "Coopératif"
+        ]
       }
     },
     {
@@ -2158,7 +2425,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900071",
-        "description": "Fiche de test générée automatiquement pour Taboo XXL."
+        "description": "Fiche de test générée automatiquement pour Taboo XXL.",
+        "categories": [
+          "Coopératif",
+          "Stratégie"
+        ]
       }
     },
     {
@@ -2188,7 +2459,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 8,
         "bggLink": "https://boardgamegeek.com/boardgame/194655",
-        "description": "Fiche de test générée automatiquement pour santorini."
+        "description": "Fiche de test générée automatiquement pour santorini.",
+        "categories": [
+          "Abstrait",
+          "Stratégie"
+        ]
       }
     },
     {
@@ -2218,7 +2493,11 @@
         "communityBestPlayers": 4,
         "communityMinAge": 8,
         "bggLink": "https://boardgamegeek.com/boardgame/24480",
-        "description": "Fiche de test générée automatiquement pour jamaica."
+        "description": "Fiche de test générée automatiquement pour jamaica.",
+        "categories": [
+          "Famille",
+          "Course"
+        ]
       }
     },
     {
@@ -2248,7 +2527,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900074",
-        "description": "Fiche de test générée automatiquement pour paque de chips."
+        "description": "Fiche de test générée automatiquement pour paque de chips.",
+        "categories": [
+          "Famille",
+          "Stratégie"
+        ]
       }
     },
     {
@@ -2278,7 +2561,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900075",
-        "description": "Fiche de test générée automatiquement pour YINSH."
+        "description": "Fiche de test générée automatiquement pour YINSH.",
+        "categories": [
+          "Famille",
+          "Coopératif"
+        ]
       }
     },
     {
@@ -2308,7 +2595,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900076",
-        "description": "Fiche de test générée automatiquement pour loup garous."
+        "description": "Fiche de test générée automatiquement pour loup garous.",
+        "categories": [
+          "Famille",
+          "Stratégie"
+        ]
       }
     },
     {
@@ -2338,7 +2629,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900077",
-        "description": "Fiche de test générée automatiquement pour unlock a la poursuite du masque de fer."
+        "description": "Fiche de test générée automatiquement pour unlock a la poursuite du masque de fer.",
+        "categories": [
+          "Stratégie",
+          "Coopératif"
+        ]
       }
     },
     {
@@ -2368,7 +2663,10 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900078",
-        "description": "Fiche de test générée automatiquement pour Maudit Mot Dit."
+        "description": "Fiche de test générée automatiquement pour Maudit Mot Dit.",
+        "categories": [
+          "Stratégie"
+        ]
       }
     },
     {
@@ -2398,7 +2696,11 @@
         "communityBestPlayers": 4,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/63268",
-        "description": "Fiche de test générée automatiquement pour dobble."
+        "description": "Fiche de test générée automatiquement pour dobble.",
+        "categories": [
+          "Party",
+          "Rapidité"
+        ]
       }
     },
     {
@@ -2428,7 +2730,11 @@
         "communityBestPlayers": 4,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgameexpansion/63268",
-        "description": "Fiche de test générée automatiquement pour dobble geox."
+        "description": "Fiche de test générée automatiquement pour dobble geox.",
+        "categories": [
+          "Party",
+          "Rapidité"
+        ]
       }
     },
     {
@@ -2458,7 +2764,11 @@
         "communityBestPlayers": 4,
         "communityMinAge": 14,
         "bggLink": "https://boardgamegeek.com/boardgame/178900",
-        "description": "Fiche de test générée automatiquement pour code names."
+        "description": "Fiche de test générée automatiquement pour code names.",
+        "categories": [
+          "Party",
+          "Déduction"
+        ]
       }
     },
     {
@@ -2488,7 +2798,11 @@
         "communityBestPlayers": 5,
         "communityMinAge": 8,
         "bggLink": "https://boardgamegeek.com/boardgame/39856",
-        "description": "Fiche de test générée automatiquement pour dixit."
+        "description": "Fiche de test générée automatiquement pour dixit.",
+        "categories": [
+          "Party",
+          "Cartes"
+        ]
       }
     },
     {
@@ -2518,7 +2832,10 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900083",
-        "description": "Fiche de test générée automatiquement pour Nom d'un renard !."
+        "description": "Fiche de test générée automatiquement pour Nom d'un renard !.",
+        "categories": [
+          "Coopératif"
+        ]
       }
     },
     {
@@ -2548,7 +2865,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 7,
         "bggLink": "https://boardgamegeek.com/boardgame/29223",
-        "description": "Fiche de test générée automatiquement pour marrakech."
+        "description": "Fiche de test générée automatiquement pour marrakech.",
+        "categories": [
+          "Famille",
+          "Abstrait"
+        ]
       }
     },
     {
@@ -2578,7 +2899,11 @@
         "communityBestPlayers": 2,
         "communityMinAge": 8,
         "bggLink": "https://boardgamegeek.com/boardgame/2392",
-        "description": "Fiche de test générée automatiquement pour mastermind."
+        "description": "Fiche de test générée automatiquement pour mastermind.",
+        "categories": [
+          "Abstrait",
+          "Déduction"
+        ]
       }
     },
     {
@@ -2608,7 +2933,10 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900086",
-        "description": "Fiche de test générée automatiquement pour château combo."
+        "description": "Fiche de test générée automatiquement pour château combo.",
+        "categories": [
+          "Famille"
+        ]
       }
     },
     {
@@ -2638,7 +2966,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900087",
-        "description": "Fiche de test générée automatiquement pour L'Imposteur."
+        "description": "Fiche de test générée automatiquement pour L'Imposteur.",
+        "categories": [
+          "Famille",
+          "Party"
+        ]
       }
     },
     {
@@ -2668,7 +3000,10 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900088",
-        "description": "Fiche de test générée automatiquement pour Kit de survie anti-colère."
+        "description": "Fiche de test générée automatiquement pour Kit de survie anti-colère.",
+        "categories": [
+          "Famille"
+        ]
       }
     },
     {
@@ -2698,7 +3033,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900089",
-        "description": "Fiche de test générée automatiquement pour colt express (chevaux et diligence)."
+        "description": "Fiche de test générée automatiquement pour colt express (chevaux et diligence).",
+        "categories": [
+          "Stratégie",
+          "Party"
+        ]
       }
     },
     {
@@ -2728,7 +3067,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900090",
-        "description": "Fiche de test générée automatiquement pour top 10."
+        "description": "Fiche de test générée automatiquement pour top 10.",
+        "categories": [
+          "Stratégie",
+          "Famille"
+        ]
       }
     },
     {
@@ -2758,7 +3101,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900091",
-        "description": "Fiche de test générée automatiquement pour apprenons l'anglais brainbox."
+        "description": "Fiche de test générée automatiquement pour apprenons l'anglais brainbox.",
+        "categories": [
+          "Coopératif",
+          "Party"
+        ]
       }
     },
     {
@@ -2788,7 +3135,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900092",
-        "description": "Fiche de test générée automatiquement pour Petits Meurtres et Faits Divers."
+        "description": "Fiche de test générée automatiquement pour Petits Meurtres et Faits Divers.",
+        "categories": [
+          "Party",
+          "Famille"
+        ]
       }
     },
     {
@@ -2818,7 +3169,10 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900093",
-        "description": "Fiche de test générée automatiquement pour slide quest."
+        "description": "Fiche de test générée automatiquement pour slide quest.",
+        "categories": [
+          "Party"
+        ]
       }
     },
     {
@@ -2848,7 +3202,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900094",
-        "description": "Fiche de test générée automatiquement pour harry potter."
+        "description": "Fiche de test générée automatiquement pour harry potter.",
+        "categories": [
+          "Party",
+          "Famille"
+        ]
       }
     },
     {
@@ -2878,7 +3236,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900095",
-        "description": "Fiche de test générée automatiquement pour candy lab."
+        "description": "Fiche de test générée automatiquement pour candy lab.",
+        "categories": [
+          "Coopératif",
+          "Party"
+        ]
       }
     },
     {
@@ -2908,7 +3270,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900096",
-        "description": "Fiche de test générée automatiquement pour liggreto."
+        "description": "Fiche de test générée automatiquement pour liggreto.",
+        "categories": [
+          "Coopératif",
+          "Famille"
+        ]
       }
     },
     {
@@ -2938,7 +3304,11 @@
         "communityBestPlayers": 4,
         "communityMinAge": 8,
         "bggLink": "https://boardgamegeek.com/boardgame/302820",
-        "description": "Fiche de test générée automatiquement pour happy city."
+        "description": "Fiche de test générée automatiquement pour happy city.",
+        "categories": [
+          "Famille",
+          "Cartes"
+        ]
       }
     },
     {
@@ -2968,7 +3338,10 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900098",
-        "description": "Fiche de test générée automatiquement pour shotten toten."
+        "description": "Fiche de test générée automatiquement pour shotten toten.",
+        "categories": [
+          "Famille"
+        ]
       }
     },
     {
@@ -2998,7 +3371,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900099",
-        "description": "Fiche de test générée automatiquement pour shotten toten 2."
+        "description": "Fiche de test générée automatiquement pour shotten toten 2.",
+        "categories": [
+          "Famille",
+          "Party"
+        ]
       }
     },
     {
@@ -3028,7 +3405,10 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900100",
-        "description": "Fiche de test générée automatiquement pour break the cube."
+        "description": "Fiche de test générée automatiquement pour break the cube.",
+        "categories": [
+          "Famille"
+        ]
       }
     },
     {
@@ -3058,7 +3438,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900101",
-        "description": "Fiche de test générée automatiquement pour break the code."
+        "description": "Fiche de test générée automatiquement pour break the code.",
+        "categories": [
+          "Stratégie",
+          "Party"
+        ]
       }
     },
     {
@@ -3088,7 +3472,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900102",
-        "description": "Fiche de test générée automatiquement pour behind."
+        "description": "Fiche de test générée automatiquement pour behind.",
+        "categories": [
+          "Stratégie",
+          "Famille"
+        ]
       }
     },
     {
@@ -3118,7 +3506,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900103",
-        "description": "Fiche de test générée automatiquement pour Jekyll vs Hyde."
+        "description": "Fiche de test générée automatiquement pour Jekyll vs Hyde.",
+        "categories": [
+          "Coopératif",
+          "Party"
+        ]
       }
     },
     {
@@ -3148,7 +3540,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900104",
-        "description": "Fiche de test générée automatiquement pour happy city grozilla."
+        "description": "Fiche de test générée automatiquement pour happy city grozilla.",
+        "categories": [
+          "Party",
+          "Famille"
+        ]
       }
     },
     {
@@ -3178,7 +3574,10 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900105",
-        "description": "Fiche de test générée automatiquement pour unlock meutres a birminghan."
+        "description": "Fiche de test générée automatiquement pour unlock meutres a birminghan.",
+        "categories": [
+          "Party"
+        ]
       }
     },
     {
@@ -3208,7 +3607,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900106",
-        "description": "Fiche de test générée automatiquement pour gatsby."
+        "description": "Fiche de test générée automatiquement pour gatsby.",
+        "categories": [
+          "Party",
+          "Famille"
+        ]
       }
     },
     {
@@ -3238,7 +3641,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900107",
-        "description": "Fiche de test générée automatiquement pour kluster."
+        "description": "Fiche de test générée automatiquement pour kluster.",
+        "categories": [
+          "Coopératif",
+          "Party"
+        ]
       }
     },
     {
@@ -3268,7 +3675,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900108",
-        "description": "Fiche de test générée automatiquement pour bellevue."
+        "description": "Fiche de test générée automatiquement pour bellevue.",
+        "categories": [
+          "Coopératif",
+          "Famille"
+        ]
       }
     },
     {
@@ -3298,7 +3709,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900109",
-        "description": "Fiche de test générée automatiquement pour Oriflamme."
+        "description": "Fiche de test générée automatiquement pour Oriflamme.",
+        "categories": [
+          "Stratégie",
+          "Party"
+        ]
       }
     },
     {
@@ -3328,7 +3743,10 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900110",
-        "description": "Fiche de test générée automatiquement pour triominos."
+        "description": "Fiche de test générée automatiquement pour triominos.",
+        "categories": [
+          "Famille"
+        ]
       }
     },
     {
@@ -3358,7 +3776,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900111",
-        "description": "Fiche de test générée automatiquement pour zertz."
+        "description": "Fiche de test générée automatiquement pour zertz.",
+        "categories": [
+          "Famille",
+          "Party"
+        ]
       }
     },
     {
@@ -3388,7 +3810,10 @@
         "communityBestPlayers": 5,
         "communityMinAge": 13,
         "bggLink": "https://boardgamegeek.com/boardgame/1487",
-        "description": "Fiche de test générée automatiquement pour taboo."
+        "description": "Fiche de test générée automatiquement pour taboo.",
+        "categories": [
+          "Party"
+        ]
       }
     },
     {
@@ -3418,7 +3843,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900113",
-        "description": "Fiche de test générée automatiquement pour zombie Kidz."
+        "description": "Fiche de test générée automatiquement pour zombie Kidz.",
+        "categories": [
+          "Stratégie",
+          "Party"
+        ]
       }
     },
     {
@@ -3448,7 +3877,11 @@
         "communityBestPlayers": 2,
         "communityMinAge": 10,
         "bggLink": "https://boardgamegeek.com/boardgame/173346",
-        "description": "Fiche de test générée automatiquement pour 7 wonders duel."
+        "description": "Fiche de test générée automatiquement pour 7 wonders duel.",
+        "categories": [
+          "Stratégie",
+          "Cartes"
+        ]
       }
     },
     {
@@ -3478,7 +3911,10 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900115",
-        "description": "Fiche de test générée automatiquement pour Sherlock Holmes Détective Conseil."
+        "description": "Fiche de test générée automatiquement pour Sherlock Holmes Détective Conseil.",
+        "categories": [
+          "Coopératif"
+        ]
       }
     },
     {
@@ -3508,7 +3944,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900116",
-        "description": "Fiche de test générée automatiquement pour Thurn & Taxis (L'Aventure Postale)."
+        "description": "Fiche de test générée automatiquement pour Thurn & Taxis (L'Aventure Postale).",
+        "categories": [
+          "Party",
+          "Stratégie"
+        ]
       }
     },
     {
@@ -3538,7 +3978,11 @@
         "communityBestPlayers": 2,
         "communityMinAge": 10,
         "bggLink": "https://boardgamegeek.com/boardgame/350083",
-        "description": "Fiche de test générée automatiquement pour district noir."
+        "description": "Fiche de test générée automatiquement pour district noir.",
+        "categories": [
+          "Cartes",
+          "Stratégie"
+        ]
       }
     },
     {
@@ -3568,7 +4012,11 @@
         "communityBestPlayers": 4,
         "communityMinAge": 10,
         "bggLink": "https://boardgamegeek.com/boardgame/402028",
-        "description": "Fiche de test générée automatiquement pour faraway."
+        "description": "Fiche de test générée automatiquement pour faraway.",
+        "categories": [
+          "Cartes",
+          "Stratégie"
+        ]
       }
     },
     {
@@ -3598,7 +4046,11 @@
         "communityBestPlayers": 4,
         "communityMinAge": 12,
         "bggLink": "https://boardgamegeek.com/boardgame/116",
-        "description": "Fiche de test générée automatiquement pour guillotine."
+        "description": "Fiche de test générée automatiquement pour guillotine.",
+        "categories": [
+          "Famille",
+          "Cartes"
+        ]
       }
     },
     {
@@ -3628,7 +4080,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 8,
         "bggLink": "https://boardgamegeek.com/boardgame/244992",
-        "description": "Fiche de test générée automatiquement pour the mind."
+        "description": "Fiche de test générée automatiquement pour the mind.",
+        "categories": [
+          "Coopératif",
+          "Cartes"
+        ]
       }
     },
     {
@@ -3658,7 +4114,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900121",
-        "description": "Fiche de test générée automatiquement pour Iknow."
+        "description": "Fiche de test générée automatiquement pour Iknow.",
+        "categories": [
+          "Stratégie",
+          "Coopératif"
+        ]
       }
     },
     {
@@ -3688,7 +4148,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900122",
-        "description": "Fiche de test générée automatiquement pour mieze katze."
+        "description": "Fiche de test générée automatiquement pour mieze katze.",
+        "categories": [
+          "Famille",
+          "Stratégie"
+        ]
       }
     },
     {
@@ -3718,7 +4182,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900123",
-        "description": "Fiche de test générée automatiquement pour Via Magica."
+        "description": "Fiche de test générée automatiquement pour Via Magica.",
+        "categories": [
+          "Famille",
+          "Coopératif"
+        ]
       }
     },
     {
@@ -3748,7 +4216,11 @@
         "communityBestPlayers": 4,
         "communityMinAge": 10,
         "bggLink": "https://boardgamegeek.com/boardgame/263918",
-        "description": "Fiche de test générée automatiquement pour cartographers."
+        "description": "Fiche de test générée automatiquement pour cartographers.",
+        "categories": [
+          "Roll & Write",
+          "Stratégie"
+        ]
       }
     },
     {
@@ -3778,7 +4250,10 @@
         "communityBestPlayers": 2,
         "communityMinAge": 8,
         "bggLink": "https://boardgamegeek.com/boardgame/247938",
-        "description": "Fiche de test générée automatiquement pour squadro."
+        "description": "Fiche de test générée automatiquement pour squadro.",
+        "categories": [
+          "Abstrait"
+        ]
       }
     },
     {
@@ -3808,7 +4283,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 8,
         "bggLink": "https://boardgamegeek.com/boardgame/371127",
-        "description": "Fiche de test générée automatiquement pour akropolis."
+        "description": "Fiche de test générée automatiquement pour akropolis.",
+        "categories": [
+          "Abstrait",
+          "Pose de tuiles"
+        ]
       }
     },
     {
@@ -3838,7 +4317,10 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900127",
-        "description": "Fiche de test générée automatiquement pour bombbusters."
+        "description": "Fiche de test générée automatiquement pour bombbusters.",
+        "categories": [
+          "Coopératif"
+        ]
       }
     },
     {
@@ -3868,7 +4350,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900128",
-        "description": "Fiche de test générée automatiquement pour esquisse."
+        "description": "Fiche de test générée automatiquement pour esquisse.",
+        "categories": [
+          "Party",
+          "Stratégie"
+        ]
       }
     },
     {
@@ -3898,7 +4384,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900129",
-        "description": "Fiche de test générée automatiquement pour silex and the city."
+        "description": "Fiche de test générée automatiquement pour silex and the city.",
+        "categories": [
+          "Party",
+          "Stratégie"
+        ]
       }
     },
     {
@@ -3928,7 +4418,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900130",
-        "description": "Fiche de test générée automatiquement pour wanted (extension n1 dodge city)."
+        "description": "Fiche de test générée automatiquement pour wanted (extension n1 dodge city).",
+        "categories": [
+          "Party",
+          "Coopératif"
+        ]
       }
     },
     {
@@ -3958,7 +4452,11 @@
         "communityBestPlayers": 4,
         "communityMinAge": 10,
         "bggLink": "https://boardgamegeek.com/boardgame/92415",
-        "description": "Fiche de test générée automatiquement pour skull & Roses."
+        "description": "Fiche de test générée automatiquement pour skull & Roses.",
+        "categories": [
+          "Party",
+          "Bluff"
+        ]
       }
     },
     {
@@ -3988,7 +4486,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900132",
-        "description": "Fiche de test générée automatiquement pour because potatoes."
+        "description": "Fiche de test générée automatiquement pour because potatoes.",
+        "categories": [
+          "Stratégie",
+          "Coopératif"
+        ]
       }
     },
     {
@@ -4018,7 +4520,10 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900133",
-        "description": "Fiche de test générée automatiquement pour similo animaux."
+        "description": "Fiche de test générée automatiquement pour similo animaux.",
+        "categories": [
+          "Stratégie"
+        ]
       }
     },
     {
@@ -4048,7 +4553,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900134",
-        "description": "Fiche de test générée automatiquement pour welcome to the dungeons."
+        "description": "Fiche de test générée automatiquement pour welcome to the dungeons.",
+        "categories": [
+          "Famille",
+          "Coopératif"
+        ]
       }
     },
     {
@@ -4078,7 +4587,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900135",
-        "description": "Fiche de test générée automatiquement pour infernal wagons."
+        "description": "Fiche de test générée automatiquement pour infernal wagons.",
+        "categories": [
+          "Famille",
+          "Stratégie"
+        ]
       }
     },
     {
@@ -4108,7 +4621,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 8,
         "bggLink": "https://boardgamegeek.com/boardgame/230802",
-        "description": "Fiche de test générée automatiquement pour azul."
+        "description": "Fiche de test générée automatiquement pour azul.",
+        "categories": [
+          "Abstrait",
+          "Pose de tuiles"
+        ]
       }
     },
     {
@@ -4138,7 +4655,10 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900137",
-        "description": "Fiche de test générée automatiquement pour très futé a la puissance trois."
+        "description": "Fiche de test générée automatiquement pour très futé a la puissance trois.",
+        "categories": [
+          "Stratégie"
+        ]
       }
     },
     {
@@ -4168,7 +4688,11 @@
         "communityBestPlayers": 4,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/1198",
-        "description": "Fiche de test générée automatiquement pour set."
+        "description": "Fiche de test générée automatiquement pour set.",
+        "categories": [
+          "Abstrait",
+          "Rapidité"
+        ]
       }
     },
     {
@@ -4198,7 +4722,11 @@
         "communityBestPlayers": 4,
         "communityMinAge": 8,
         "bggLink": "https://boardgamegeek.com/boardgame/11002",
-        "description": "Fiche de test générée automatiquement pour pickomino."
+        "description": "Fiche de test générée automatiquement pour pickomino.",
+        "categories": [
+          "Famille",
+          "Dés"
+        ]
       }
     },
     {
@@ -4228,7 +4756,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900140",
-        "description": "Fiche de test générée automatiquement pour codex."
+        "description": "Fiche de test générée automatiquement pour codex.",
+        "categories": [
+          "Party",
+          "Coopératif"
+        ]
       }
     },
     {
@@ -4258,7 +4790,10 @@
         "communityBestPlayers": 2,
         "communityMinAge": 12,
         "bggLink": "https://boardgamegeek.com/boardgame/373106",
-        "description": "Fiche de test générée automatiquement pour sky team."
+        "description": "Fiche de test générée automatiquement pour sky team.",
+        "categories": [
+          "Coopératif"
+        ]
       }
     },
     {
@@ -4288,7 +4823,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900142",
-        "description": "Fiche de test générée automatiquement pour le grand mechant monstre."
+        "description": "Fiche de test générée automatiquement pour le grand mechant monstre.",
+        "categories": [
+          "Party",
+          "Coopératif"
+        ]
       }
     },
     {
@@ -4318,7 +4857,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900143",
-        "description": "Fiche de test générée automatiquement pour saboteur (coup de bluff dans la mine d'or)."
+        "description": "Fiche de test générée automatiquement pour saboteur (coup de bluff dans la mine d'or).",
+        "categories": [
+          "Coopératif",
+          "Stratégie"
+        ]
       }
     },
     {
@@ -4348,7 +4891,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900144",
-        "description": "Fiche de test générée automatiquement pour Exploding Kittens."
+        "description": "Fiche de test générée automatiquement pour Exploding Kittens.",
+        "categories": [
+          "Stratégie",
+          "Party"
+        ]
       }
     },
     {
@@ -4378,7 +4925,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900145",
-        "description": "Fiche de test générée automatiquement pour korsar."
+        "description": "Fiche de test générée automatiquement pour korsar.",
+        "categories": [
+          "Stratégie",
+          "Famille"
+        ]
       }
     },
     {
@@ -4408,7 +4959,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900146",
-        "description": "Fiche de test générée automatiquement pour mow."
+        "description": "Fiche de test générée automatiquement pour mow.",
+        "categories": [
+          "Famille",
+          "Party"
+        ]
       }
     },
     {
@@ -4438,7 +4993,11 @@
         "communityBestPlayers": 4,
         "communityMinAge": 8,
         "bggLink": "https://boardgamegeek.com/boardgame/98778",
-        "description": "Fiche de test générée automatiquement pour hanabi."
+        "description": "Fiche de test générée automatiquement pour hanabi.",
+        "categories": [
+          "Coopératif",
+          "Cartes"
+        ]
       }
     },
     {
@@ -4468,7 +5027,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900148",
-        "description": "Fiche de test générée automatiquement pour Oriflamme (embrasement)."
+        "description": "Fiche de test générée automatiquement pour Oriflamme (embrasement).",
+        "categories": [
+          "Famille",
+          "Party"
+        ]
       }
     },
     {
@@ -4498,7 +5061,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900149",
-        "description": "Fiche de test générée automatiquement pour sardines."
+        "description": "Fiche de test générée automatiquement pour sardines.",
+        "categories": [
+          "Stratégie",
+          "Famille"
+        ]
       }
     },
     {
@@ -4528,7 +5095,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900150",
-        "description": "Fiche de test générée automatiquement pour mito."
+        "description": "Fiche de test générée automatiquement pour mito.",
+        "categories": [
+          "Coopératif",
+          "Party"
+        ]
       }
     },
     {
@@ -4558,7 +5129,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900151",
-        "description": "Fiche de test générée automatiquement pour rebirth."
+        "description": "Fiche de test générée automatiquement pour rebirth.",
+        "categories": [
+          "Coopératif",
+          "Famille"
+        ]
       }
     },
     {
@@ -4588,7 +5163,10 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900152",
-        "description": "Fiche de test générée automatiquement pour get on board (New York and london)."
+        "description": "Fiche de test générée automatiquement pour get on board (New York and london).",
+        "categories": [
+          "Party"
+        ]
       }
     },
     {
@@ -4618,7 +5196,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 10,
         "bggLink": "https://boardgamegeek.com/boardgame/86248",
-        "description": "Fiche de test générée automatiquement pour sobek."
+        "description": "Fiche de test générée automatiquement pour sobek.",
+        "categories": [
+          "Stratégie",
+          "Cartes"
+        ]
       }
     },
     {
@@ -4648,7 +5230,10 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900154",
-        "description": "Fiche de test générée automatiquement pour unlock kids (histoire de detective)."
+        "description": "Fiche de test générée automatiquement pour unlock kids (histoire de detective).",
+        "categories": [
+          "Party"
+        ]
       }
     },
     {
@@ -4678,7 +5263,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 8,
         "bggLink": "https://boardgamegeek.com/boardgame/30549",
-        "description": "Fiche de test générée automatiquement pour pandemie."
+        "description": "Fiche de test générée automatiquement pour pandemie.",
+        "categories": [
+          "Coopératif",
+          "Stratégie"
+        ]
       }
     },
     {
@@ -4708,7 +5297,11 @@
         "communityBestPlayers": 4,
         "communityMinAge": 8,
         "bggLink": "https://boardgamegeek.com/boardgame/237458",
-        "description": "Fiche de test générée automatiquement pour skyjo."
+        "description": "Fiche de test générée automatiquement pour skyjo.",
+        "categories": [
+          "Famille",
+          "Cartes"
+        ]
       }
     },
     {
@@ -4738,7 +5331,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900157",
-        "description": "Fiche de test générée automatiquement pour spring festival."
+        "description": "Fiche de test générée automatiquement pour spring festival.",
+        "categories": [
+          "Stratégie",
+          "Famille"
+        ]
       }
     },
     {
@@ -4768,7 +5365,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900158",
-        "description": "Fiche de test générée automatiquement pour atomic business."
+        "description": "Fiche de test générée automatiquement pour atomic business.",
+        "categories": [
+          "Famille",
+          "Party"
+        ]
       }
     },
     {
@@ -4798,7 +5399,11 @@
         "communityBestPlayers": 4,
         "communityMinAge": 10,
         "bggLink": "https://boardgamegeek.com/boardgame/284083",
-        "description": "Fiche de test générée automatiquement pour the crew."
+        "description": "Fiche de test générée automatiquement pour the crew.",
+        "categories": [
+          "Coopératif",
+          "Cartes"
+        ]
       }
     },
     {
@@ -4828,7 +5433,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900160",
-        "description": "Fiche de test générée automatiquement pour 6 qui prend."
+        "description": "Fiche de test générée automatiquement pour 6 qui prend.",
+        "categories": [
+          "Famille",
+          "Party"
+        ]
       }
     },
     {
@@ -4858,7 +5467,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900161",
-        "description": "Fiche de test générée automatiquement pour TTMC 2 (Tu Te Remets Combien ?)."
+        "description": "Fiche de test générée automatiquement pour TTMC 2 (Tu Te Remets Combien ?).",
+        "categories": [
+          "Stratégie",
+          "Famille"
+        ]
       }
     },
     {
@@ -4888,7 +5501,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900162",
-        "description": "Fiche de test générée automatiquement pour twin it."
+        "description": "Fiche de test générée automatiquement pour twin it.",
+        "categories": [
+          "Coopératif",
+          "Party"
+        ]
       }
     },
     {
@@ -4918,7 +5535,10 @@
         "communityBestPlayers": 3,
         "communityMinAge": 14,
         "bggLink": "https://boardgamegeek.com/boardgame/356123",
-        "description": "Fiche de test générée automatiquement pour turing machine."
+        "description": "Fiche de test générée automatiquement pour turing machine.",
+        "categories": [
+          "Déduction"
+        ]
       }
     },
     {
@@ -4948,7 +5568,11 @@
         "communityBestPlayers": 4,
         "communityMinAge": 8,
         "bggLink": "https://boardgamegeek.com/boardgame/209778",
-        "description": "Fiche de test générée automatiquement pour magic maze."
+        "description": "Fiche de test générée automatiquement pour magic maze.",
+        "categories": [
+          "Coopératif",
+          "Rapidité"
+        ]
       }
     },
     {
@@ -4978,7 +5602,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900165",
-        "description": "Fiche de test générée automatiquement pour dorf robotik."
+        "description": "Fiche de test générée automatiquement pour dorf robotik.",
+        "categories": [
+          "Party",
+          "Famille"
+        ]
       }
     },
     {
@@ -5008,7 +5636,10 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900166",
-        "description": "Fiche de test générée automatiquement pour panicozoo."
+        "description": "Fiche de test générée automatiquement pour panicozoo.",
+        "categories": [
+          "Party"
+        ]
       }
     },
     {
@@ -5038,7 +5669,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 10,
         "bggLink": "https://boardgamegeek.com/boardgame/318977",
-        "description": "Fiche de test générée automatiquement pour micro macro (crime city)."
+        "description": "Fiche de test générée automatiquement pour micro macro (crime city).",
+        "categories": [
+          "Coopératif",
+          "Déduction"
+        ]
       }
     },
     {
@@ -5068,7 +5703,11 @@
         "communityBestPlayers": 5,
         "communityMinAge": 8,
         "bggLink": "https://boardgamegeek.com/boardgame/254640",
-        "description": "Fiche de test générée automatiquement pour just one."
+        "description": "Fiche de test générée automatiquement pour just one.",
+        "categories": [
+          "Party",
+          "Coopératif"
+        ]
       }
     },
     {
@@ -5098,7 +5737,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900169",
-        "description": "Fiche de test générée automatiquement pour mancala."
+        "description": "Fiche de test générée automatiquement pour mancala.",
+        "categories": [
+          "Stratégie",
+          "Famille"
+        ]
       }
     },
     {
@@ -5128,7 +5771,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900170",
-        "description": "Fiche de test générée automatiquement pour brainbox voyage aytour du monde."
+        "description": "Fiche de test générée automatiquement pour brainbox voyage aytour du monde.",
+        "categories": [
+          "Famille",
+          "Party"
+        ]
       }
     },
     {
@@ -5158,7 +5805,10 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900171",
-        "description": "Fiche de test générée automatiquement pour brainbox inventions."
+        "description": "Fiche de test générée automatiquement pour brainbox inventions.",
+        "categories": [
+          "Famille"
+        ]
       }
     },
     {
@@ -5188,7 +5838,11 @@
         "communityBestPlayers": 4,
         "communityMinAge": 8,
         "bggLink": "https://boardgamegeek.com/boardgame/5782",
-        "description": "Fiche de test générée automatiquement pour coloretto."
+        "description": "Fiche de test générée automatiquement pour coloretto.",
+        "categories": [
+          "Famille",
+          "Cartes"
+        ]
       }
     },
     {
@@ -5218,7 +5872,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 8,
         "bggLink": "https://boardgamegeek.com/boardgame/367220",
-        "description": "Fiche de test générée automatiquement pour sea salt & paper."
+        "description": "Fiche de test générée automatiquement pour sea salt & paper.",
+        "categories": [
+          "Famille",
+          "Cartes"
+        ]
       }
     },
     {
@@ -5248,7 +5906,10 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900174",
-        "description": "Fiche de test générée automatiquement pour unlock squeek and sausage."
+        "description": "Fiche de test générée automatiquement pour unlock squeek and sausage.",
+        "categories": [
+          "Coopératif"
+        ]
       }
     },
     {
@@ -5278,7 +5939,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900175",
-        "description": "Fiche de test générée automatiquement pour super cats."
+        "description": "Fiche de test générée automatiquement pour super cats.",
+        "categories": [
+          "Coopératif",
+          "Stratégie"
+        ]
       }
     },
     {
@@ -5308,7 +5973,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900176",
-        "description": "Fiche de test générée automatiquement pour skip bo."
+        "description": "Fiche de test générée automatiquement pour skip bo.",
+        "categories": [
+          "Party",
+          "Coopératif"
+        ]
       }
     },
     {
@@ -5338,7 +6007,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900177",
-        "description": "Fiche de test générée automatiquement pour stella (dixit universe)."
+        "description": "Fiche de test générée automatiquement pour stella (dixit universe).",
+        "categories": [
+          "Party",
+          "Stratégie"
+        ]
       }
     },
     {
@@ -5368,7 +6041,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900178",
-        "description": "Fiche de test générée automatiquement pour Sankt Petersburg."
+        "description": "Fiche de test générée automatiquement pour Sankt Petersburg.",
+        "categories": [
+          "Party",
+          "Coopératif"
+        ]
       }
     },
     {
@@ -5398,7 +6075,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900179",
-        "description": "Fiche de test générée automatiquement pour palabres."
+        "description": "Fiche de test générée automatiquement pour palabres.",
+        "categories": [
+          "Coopératif",
+          "Stratégie"
+        ]
       }
     },
     {
@@ -5428,7 +6109,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900180",
-        "description": "Fiche de test générée automatiquement pour dixit harmonies."
+        "description": "Fiche de test générée automatiquement pour dixit harmonies.",
+        "categories": [
+          "Stratégie",
+          "Coopératif"
+        ]
       }
     },
     {
@@ -5458,7 +6143,10 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900181",
-        "description": "Fiche de test générée automatiquement pour dixit quest."
+        "description": "Fiche de test générée automatiquement pour dixit quest.",
+        "categories": [
+          "Stratégie"
+        ]
       }
     },
     {
@@ -5488,7 +6176,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900182",
-        "description": "Fiche de test générée automatiquement pour dixit journey."
+        "description": "Fiche de test générée automatiquement pour dixit journey.",
+        "categories": [
+          "Famille",
+          "Coopératif"
+        ]
       }
     },
     {
@@ -5518,7 +6210,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900183",
-        "description": "Fiche de test générée automatiquement pour blanche neige."
+        "description": "Fiche de test générée automatiquement pour blanche neige.",
+        "categories": [
+          "Famille",
+          "Stratégie"
+        ]
       }
     },
     {
@@ -5548,7 +6244,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900184",
-        "description": "Fiche de test générée automatiquement pour toy battle."
+        "description": "Fiche de test générée automatiquement pour toy battle.",
+        "categories": [
+          "Famille",
+          "Coopératif"
+        ]
       }
     },
     {
@@ -5578,7 +6278,10 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900185",
-        "description": "Fiche de test générée automatiquement pour Pyramid of Pengqueen."
+        "description": "Fiche de test générée automatiquement pour Pyramid of Pengqueen.",
+        "categories": [
+          "Stratégie"
+        ]
       }
     },
     {
@@ -5608,7 +6311,10 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900186",
-        "description": "Fiche de test générée automatiquement pour la boite a enigme edition deluxe."
+        "description": "Fiche de test générée automatiquement pour la boite a enigme edition deluxe.",
+        "categories": [
+          "Coopératif"
+        ]
       }
     },
     {
@@ -5638,7 +6344,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 12,
         "bggLink": "https://boardgamegeek.com/boardgame/31260",
-        "description": "Fiche de test générée automatiquement pour agricola."
+        "description": "Fiche de test générée automatiquement pour agricola.",
+        "categories": [
+          "Stratégie",
+          "Gestion"
+        ]
       }
     },
     {
@@ -5668,7 +6378,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900188",
-        "description": "Fiche de test générée automatiquement pour tigres et euphrate."
+        "description": "Fiche de test générée automatiquement pour tigres et euphrate.",
+        "categories": [
+          "Party",
+          "Stratégie"
+        ]
       }
     },
     {
@@ -5698,7 +6412,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900189",
-        "description": "Fiche de test générée automatiquement pour colt express (de l'or au bout des rails)."
+        "description": "Fiche de test générée automatiquement pour colt express (de l'or au bout des rails).",
+        "categories": [
+          "Party",
+          "Coopératif"
+        ]
       }
     },
     {
@@ -5728,7 +6446,11 @@
         "communityBestPlayers": 5,
         "communityMinAge": 10,
         "bggLink": "https://boardgamegeek.com/boardgame/147151",
-        "description": "Fiche de test générée automatiquement pour concept."
+        "description": "Fiche de test générée automatiquement pour concept.",
+        "categories": [
+          "Party",
+          "Déduction"
+        ]
       }
     },
     {
@@ -5758,7 +6480,11 @@
         "communityBestPlayers": 4,
         "communityMinAge": 8,
         "bggLink": "https://boardgamegeek.com/boardgame/123540",
-        "description": "Fiche de test générée automatiquement pour tokaido."
+        "description": "Fiche de test générée automatiquement pour tokaido.",
+        "categories": [
+          "Famille",
+          "Stratégie"
+        ]
       }
     },
     {
@@ -5788,7 +6514,10 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900192",
-        "description": "Fiche de test générée automatiquement pour malette poker."
+        "description": "Fiche de test générée automatiquement pour malette poker.",
+        "categories": [
+          "Stratégie"
+        ]
       }
     },
     {
@@ -5818,7 +6547,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900193",
-        "description": "Fiche de test générée automatiquement pour suspect."
+        "description": "Fiche de test générée automatiquement pour suspect.",
+        "categories": [
+          "Famille",
+          "Coopératif"
+        ]
       }
     },
     {
@@ -5848,7 +6581,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900194",
-        "description": "Fiche de test générée automatiquement pour escape room le jeu."
+        "description": "Fiche de test générée automatiquement pour escape room le jeu.",
+        "categories": [
+          "Famille",
+          "Stratégie"
+        ]
       }
     },
     {
@@ -5878,7 +6615,11 @@
         "communityBestPlayers": 4,
         "communityMinAge": 10,
         "bggLink": "https://boardgamegeek.com/boardgame/175348",
-        "description": "Fiche de test générée automatiquement pour skull king."
+        "description": "Fiche de test générée automatiquement pour skull king.",
+        "categories": [
+          "Cartes",
+          "Party"
+        ]
       }
     },
     {
@@ -5908,7 +6649,10 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900196",
-        "description": "Fiche de test générée automatiquement pour best of loup garous."
+        "description": "Fiche de test générée automatiquement pour best of loup garous.",
+        "categories": [
+          "Stratégie"
+        ]
       }
     },
     {
@@ -5938,7 +6682,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900197",
-        "description": "Fiche de test générée automatiquement pour La Guerre des Moutons."
+        "description": "Fiche de test générée automatiquement pour La Guerre des Moutons.",
+        "categories": [
+          "Stratégie",
+          "Coopératif"
+        ]
       }
     },
     {
@@ -5968,7 +6716,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900198",
-        "description": "Fiche de test générée automatiquement pour original mexican trail."
+        "description": "Fiche de test générée automatiquement pour original mexican trail.",
+        "categories": [
+          "Coopératif",
+          "Stratégie"
+        ]
       }
     },
     {
@@ -5998,7 +6750,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/25669",
-        "description": "Fiche de test générée automatiquement pour qwirkle."
+        "description": "Fiche de test générée automatiquement pour qwirkle.",
+        "categories": [
+          "Abstrait",
+          "Famille"
+        ]
       }
     },
     {
@@ -6028,7 +6784,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900200",
-        "description": "Fiche de test générée automatiquement pour harry potter (les escalier de poudlard)."
+        "description": "Fiche de test générée automatiquement pour harry potter (les escalier de poudlard).",
+        "categories": [
+          "Party",
+          "Stratégie"
+        ]
       }
     },
     {
@@ -6058,7 +6818,10 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900201",
-        "description": "Fiche de test générée automatiquement pour alveola."
+        "description": "Fiche de test générée automatiquement pour alveola.",
+        "categories": [
+          "Party"
+        ]
       }
     },
     {
@@ -6088,7 +6851,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900202",
-        "description": "Fiche de test générée automatiquement pour queendomino."
+        "description": "Fiche de test générée automatiquement pour queendomino.",
+        "categories": [
+          "Coopératif",
+          "Famille"
+        ]
       }
     },
     {
@@ -6118,7 +6885,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900203",
-        "description": "Fiche de test générée automatiquement pour nain jaune."
+        "description": "Fiche de test générée automatiquement pour nain jaune.",
+        "categories": [
+          "Coopératif",
+          "Party"
+        ]
       }
     },
     {
@@ -6148,7 +6919,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 8,
         "bggLink": "https://boardgamegeek.com/boardgameexpansion/270270",
-        "description": "Fiche de test générée automatiquement pour azul extension pavillon d'été."
+        "description": "Fiche de test générée automatiquement pour azul extension pavillon d'été.",
+        "categories": [
+          "Abstrait",
+          "Pose de tuiles"
+        ]
       }
     },
     {
@@ -6178,7 +6953,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900205",
-        "description": "Fiche de test générée automatiquement pour welcome to the moon."
+        "description": "Fiche de test générée automatiquement pour welcome to the moon.",
+        "categories": [
+          "Famille",
+          "Party"
+        ]
       }
     },
     {
@@ -6208,7 +6987,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 10,
         "bggLink": "https://boardgamegeek.com/boardgame/328479",
-        "description": "Fiche de test générée automatiquement pour living forest."
+        "description": "Fiche de test générée automatiquement pour living forest.",
+        "categories": [
+          "Stratégie",
+          "Cartes"
+        ]
       }
     },
     {
@@ -6238,7 +7021,11 @@
         "communityBestPlayers": 4,
         "communityMinAge": 10,
         "bggLink": "https://boardgamegeek.com/boardgame/181304",
-        "description": "Fiche de test générée automatiquement pour mysterium."
+        "description": "Fiche de test générée automatiquement pour mysterium.",
+        "categories": [
+          "Coopératif",
+          "Déduction"
+        ]
       }
     },
     {
@@ -6268,7 +7055,11 @@
         "communityBestPlayers": 4,
         "communityMinAge": 8,
         "bggLink": "https://boardgamegeek.com/boardgame/14996",
-        "description": "Fiche de test générée automatiquement pour les aventuriers du rail europe."
+        "description": "Fiche de test générée automatiquement pour les aventuriers du rail europe.",
+        "categories": [
+          "Famille",
+          "Stratégie"
+        ]
       }
     },
     {
@@ -6298,7 +7089,11 @@
         "communityBestPlayers": 4,
         "communityMinAge": 10,
         "bggLink": "https://boardgamegeek.com/boardgame/13",
-        "description": "Fiche de test générée automatiquement pour catane le jeu de base."
+        "description": "Fiche de test générée automatiquement pour catane le jeu de base.",
+        "categories": [
+          "Stratégie",
+          "Négociation"
+        ]
       }
     },
     {
@@ -6328,7 +7123,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900210",
-        "description": "Fiche de test générée automatiquement pour unlock timeless adventure."
+        "description": "Fiche de test générée automatiquement pour unlock timeless adventure.",
+        "categories": [
+          "Coopératif",
+          "Famille"
+        ]
       }
     },
     {
@@ -6358,7 +7157,10 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900211",
-        "description": "Fiche de test générée automatiquement pour wanted."
+        "description": "Fiche de test générée automatiquement pour wanted.",
+        "categories": [
+          "Party"
+        ]
       }
     },
     {
@@ -6388,7 +7190,11 @@
         "communityBestPlayers": 3,
         "communityMinAge": 6,
         "bggLink": "https://boardgamegeek.com/boardgame/900212",
-        "description": "Fiche de test générée automatiquement pour nouvelle contrée."
+        "description": "Fiche de test générée automatiquement pour nouvelle contrée.",
+        "categories": [
+          "Party",
+          "Famille"
+        ]
       }
     },
     {
@@ -6418,7 +7224,10 @@
         "communityBestPlayers": 3,
         "communityMinAge": 4,
         "bggLink": "https://boardgamegeek.com/boardgame/900213",
-        "description": "Fiche de test générée automatiquement pour magic rabit."
+        "description": "Fiche de test générée automatiquement pour magic rabit.",
+        "categories": [
+          "Party"
+        ]
       }
     }
   ],

@@ -162,8 +162,8 @@ const sortDir = ref<'asc' | 'desc'>('asc')
 
 const columns: { key: SortKey; label: string; class?: string }[] = [
   { key: 'nom',       label: 'Jeu' },
-  { key: 'players',   label: '👥', class: 'hidden md:table-cell' },
   { key: 'category',  label: 'Catégorie', class: 'hidden md:table-cell' },
+  { key: 'players',   label: '👥', class: 'hidden md:table-cell' },
   { key: 'duree',     label: '⏱ min', class: 'hidden md:table-cell' },
   { key: 'age',       label: '🎂 ans', class: 'hidden md:table-cell' },
   { key: 'note',      label: '★ Note' },
