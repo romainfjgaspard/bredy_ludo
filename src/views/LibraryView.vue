@@ -78,7 +78,7 @@
                   </td>
                   <!-- Catégorie -->
                   <td class="px-3 py-2.5 text-base-content/50 text-xs whitespace-nowrap">
-                    {{ game.metadata?.categories?.[0] ?? '—' }}
+                    {{ game.metadata?.categories?.[0] ? translateCategory(game.metadata.categories[0]) : '—' }}
                   </td>
                   <!-- Joueurs -->
                   <td class="px-3 py-2.5 text-base-content/60 whitespace-nowrap">
@@ -95,6 +95,10 @@
                   <!-- Note -->
                   <td class="px-3 py-2.5" @click.stop>
                     <NoteCell :game="game" :note-mode="filtersStore.noteMode" @saved="onNoteSaved" />
+                  </td>
+                  <!-- Casier -->
+                  <td class="px-3 py-2.5 text-base-content/60 text-xs whitespace-nowrap font-semibold">
+                    {{ game.emplacement ?? '—' }}
                   </td>
                   <!-- Dernière partie -->
                   <td class="px-3 py-2.5 text-base-content/40 text-xs whitespace-nowrap">
@@ -127,6 +131,7 @@ import { useFiltersStore, type NoteMode } from '@/stores/filtersStore'
 import { usePlaysStore } from '@/stores/playsStore'
 import { useGameFilters } from '@/composables/useGameFilters'
 import { computeFamilyRating } from '@/utils/ratingCalc'
+import { translateCategory } from '@/utils/bggCategories'
 import { PROFILES } from '@/domain/Profile'
 import type { Game } from '@/domain/Game'
 
@@ -154,18 +159,19 @@ const noteModeOptions: { label: string; value: NoteMode }[] = [
 ]
 
 // ─── Tri ───────────────────────────────────────────────────────────────────
-type SortKey = 'nom' | 'players' | 'category' | 'duree' | 'age' | 'note' | 'lastPlayed'
+type SortKey = 'nom' | 'players' | 'category' | 'duree' | 'age' | 'note' | 'emplacement' | 'lastPlayed'
 const sortKey = ref<SortKey>('nom')
 const sortDir = ref<'asc' | 'desc'>('asc')
 
 const columns: { key: SortKey; label: string }[] = [
-  { key: 'nom',        label: 'Jeu' },
-  { key: 'category',   label: 'Catégorie' },
-  { key: 'players',    label: '👥' },
-  { key: 'duree',      label: '⏱ min' },
-  { key: 'age',        label: '🎂 ans' },
-  { key: 'note',       label: '★ Note' },
-  { key: 'lastPlayed', label: 'Dernière partie' },
+  { key: 'nom',         label: 'Jeu' },
+  { key: 'category',    label: 'Catégorie' },
+  { key: 'players',     label: '👥' },
+  { key: 'duree',       label: '⏱ min' },
+  { key: 'age',         label: '🎂 ans' },
+  { key: 'note',        label: '★ Note' },
+  { key: 'emplacement', label: '📦 Casier' },
+  { key: 'lastPlayed',  label: 'Dernière partie' },
 ]
 
 function getNote(game: Game): number | null {
@@ -187,8 +193,9 @@ const sortedGames = computed(() => {
       case 'players':    va = a.metadata?.nb_joueurs_min ?? 0; vb = b.metadata?.nb_joueurs_min ?? 0; break
       case 'duree':      va = a.metadata?.duree_min ?? 0; vb = b.metadata?.duree_min ?? 0; break
       case 'age':        va = a.metadata?.age_min ?? 0; vb = b.metadata?.age_min ?? 0; break
-      case 'note':       va = getNote(a) ?? -1; vb = getNote(b) ?? -1; break
-      case 'lastPlayed': va = lastPlayMap.value.get(a.id)?.getTime() ?? 0; vb = lastPlayMap.value.get(b.id)?.getTime() ?? 0; break
+      case 'note':        va = getNote(a) ?? -1; vb = getNote(b) ?? -1; break
+      case 'emplacement': va = a.emplacement ?? ''; vb = b.emplacement ?? ''; break
+      case 'lastPlayed':  va = lastPlayMap.value.get(a.id)?.getTime() ?? 0; vb = lastPlayMap.value.get(b.id)?.getTime() ?? 0; break
       default:           va = a.nom; vb = b.nom
     }
     if (va < vb) return sortDir.value === 'asc' ? -1 : 1

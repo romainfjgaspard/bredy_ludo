@@ -65,13 +65,8 @@
                 v-for="cat in game.metadata.categories"
                 :key="cat"
                 class="text-xs bg-base-200 text-base-content/60 px-2 py-0.5 rounded-full"
-              >{{ cat }}</span>
+              >{{ translateCategory(cat) }}</span>
             </div>
-
-            <!-- Description -->
-            <p v-if="game.metadata?.description" class="text-sm text-base-content/60 leading-relaxed line-clamp-4">
-              {{ game.metadata.description }}
-            </p>
 
             <!-- Infos BGG -->
             <div v-if="game.metadata?.bgg_rating || game.metadata?.bgg_weight || game.metadata?.bgg_link" class="flex items-center gap-3 text-sm flex-wrap">
@@ -184,6 +179,7 @@ import { usePlaysStore } from '@/stores/playsStore'
 import { updateRating } from '@/services/gamesService'
 import { getPlaysByGame } from '@/services/playsService'
 import { computeFamilyRating } from '@/utils/ratingCalc'
+import { translateCategory } from '@/utils/bggCategories'
 import { PROFILES, type Profile } from '@/domain/Profile'
 import type { Play } from '@/domain/Play'
 import LoadingSpinner from '@/components/common/LoadingSpinner.vue'

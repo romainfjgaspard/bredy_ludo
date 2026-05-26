@@ -23,6 +23,7 @@
 
 <script setup lang="ts">
 import { ref, computed } from 'vue'
+import { imageUrl as buildImageUrl } from '@/utils/imageUrl'
 
 const props = defineProps<{
   imageUrl?: string
@@ -30,7 +31,7 @@ const props = defineProps<{
   alt?: string
 }>()
 
-const src = ref(props.imageUrl ?? '')
+const src = ref(buildImageUrl(props.imageUrl))
 const imageLoaded = ref(false)
 
 const initial = computed(() => props.name.trim().charAt(0).toUpperCase())
