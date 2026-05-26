@@ -68,6 +68,11 @@
               >{{ translateCategory(cat) }}</span>
             </div>
 
+            <!-- Description -->
+            <p v-if="game.metadata?.description" class="text-sm text-base-content/60 leading-relaxed line-clamp-4">
+              {{ game.metadata.description }}
+            </p>
+
             <!-- Infos BGG -->
             <div v-if="game.metadata?.bgg_rating || game.metadata?.bgg_weight || game.metadata?.bgg_link" class="flex items-center gap-3 text-sm flex-wrap">
               <span v-if="game.metadata?.bgg_rating" class="text-base-content/50">

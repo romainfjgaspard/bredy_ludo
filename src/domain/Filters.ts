@@ -27,6 +27,6 @@ export function defaultFilters(): GameFilters {
     minRating: null,
     category: null,
     lastPlayedFilter: null,
-    includeExtensions: false,
+    includeExtensions: true,
   }
 }
