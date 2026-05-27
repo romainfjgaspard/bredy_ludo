@@ -1,6 +1,6 @@
-# AGENTS-STATUS.md — État du projet au 26/05/2026
+# AGENTS-STATUS.md — État du projet au 27/05/2026
 
-## En production (origin/main, commit c1c4145)
+## En production
 
 ### ✅ Fonctionnel
 - Déploiement GitHub Actions Pages
@@ -10,11 +10,12 @@
 - Stats : compteurs, top jeux, parties/mois
 - Admin : CRUD jeux, barre de recherche (auth Firebase)
 
-### ✅ Corrections appliquées (26/05/2026)
-- **Images** : `GameCover` utilise `imageUrl` utility avec `BASE_URL + images/games/`
+### ✅ Corrections appliquées (26-27/05/2026)
+- **Images** : `GameCover` z-order corrigé (placeholder sous l'image) + URL via `imageUrl` utility
 - **Catégories** : traduites en français via `bggCategories.ts` (nouveau fichier)
-- **Descriptions** : retirées de la fiche (étaient en anglais)
+- **Descriptions** : affichées dans la fiche jeu
 - **Colonne Casier** : ajoutée dans le tableau après "Note" (triable)
+- **Extensions** : affichées par défaut (`includeExtensions: true`)
 
 ### ❌ Bugs connus
 - Stars cliquables même sans auth → Firestore refuse le write (UX à améliorer)
