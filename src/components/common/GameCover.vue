@@ -1,6 +1,14 @@
 <template>
   <div class="relative w-full overflow-hidden bg-base-200" :style="{ aspectRatio: '16/9' }">
-    <!-- Image réelle : chargée silencieusement, affichée uniquement si OK -->
+    <!-- Placeholder coloré déterministe, visible pendant le chargement et en cas d'erreur -->
+    <div
+      class="absolute inset-0 flex flex-col items-center justify-center gap-2 select-none"
+      :style="{ background: gradient }"
+    >
+      <span class="text-white/80 text-5xl font-black drop-shadow">{{ initial }}</span>
+      <span class="text-white/50 text-xs font-medium tracking-widest uppercase">{{ shortName }}</span>
+    </div>
+    <!-- Image réelle : par-dessus le placeholder, affichée uniquement si chargée -->
     <img
       v-if="src"
       :src="src"
@@ -10,14 +18,6 @@
       @load="imageLoaded = true"
       @error="imageLoaded = false; src = ''"
     />
-    <!-- Placeholder coloré déterministe, toujours présent sous l'image -->
-    <div
-      class="absolute inset-0 flex flex-col items-center justify-center gap-2 select-none"
-      :style="{ background: gradient }"
-    >
-      <span class="text-white/80 text-5xl font-black drop-shadow">{{ initial }}</span>
-      <span class="text-white/50 text-xs font-medium tracking-widest uppercase">{{ shortName }}</span>
-    </div>
   </div>
 </template>
 
